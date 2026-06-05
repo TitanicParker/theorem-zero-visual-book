@@ -1,3 +1,4 @@
+# trigger: 2026-06-05T18:25Z
 name: Scene Visual Mapping
 
 on:
@@ -157,7 +158,6 @@ jobs:
                   score = summary_overlap(row.get('summary'), block.get('text'))
                   return row, 'manual_review', round(0.40 + score * 0.2, 3), 'global_order_candidate_part_or_chapter_drift', score
 
-              # fallback: semantic candidate within same part/chapter, not already consumed
               best = None
               for row in occurrence_rows:
                   if occurrence_key(row) in used_occurrence_keys:
@@ -181,221 +181,59 @@ jobs:
               scene_type = scene.get('scene_type')
               block = block_by_id.get(source_id)
               if sid == 'scene-earned-catalogue-first-movement' or scene_type == 'ledger_table':
-                  scene.update({
-                      'visual_id': None,
-                      'visual_mapping_status': 'special_scene',
-                      'visual_bearing': True,
-                      'rendering_mode': 'static_table_with_optional_row_focus',
-                      'notes': 'Earned catalogue interstitial preserved as a special ledger-table scene; not forced into Visual-ID mapping.'
-                  })
-                  mappings.append({
-                      'scene_id': sid,
-                      'source_block_id': source_id,
-                      'source_type': scene_type,
-                      'source_global_index': None,
-                      'source_chapter_title': None,
-                      'visual_id': None,
-                      'visual_occurrence_global_no': None,
-                      'visual_occurrence_ref': None,
-                      'mapping_status': 'special_scene',
-                      'mapping_confidence': 1.0,
-                      'mapping_method': 'interstitial_special_case',
-                      'reason': 'Ledger table remains a static special scene between Chapter Ten and Chapter Eleven.'
-                  })
+                  scene.update({'visual_id': None, 'visual_mapping_status': 'special_scene', 'visual_bearing': True, 'rendering_mode': 'static_table_with_optional_row_focus', 'notes': 'Earned catalogue interstitial preserved as a special ledger-table scene; not forced into Visual-ID mapping.'})
+                  mappings.append({'scene_id': sid, 'source_block_id': source_id, 'source_type': scene_type, 'source_global_index': None, 'source_chapter_title': None, 'visual_id': None, 'visual_occurrence_global_no': None, 'visual_occurrence_ref': None, 'mapping_status': 'special_scene', 'mapping_confidence': 1.0, 'mapping_method': 'interstitial_special_case', 'reason': 'Ledger table remains a static special scene between Chapter Ten and Chapter Eleven.'})
                   continue
-
               if scene_type in nonvisual_types or (block and block.get('type') in nonvisual_types):
-                  scene.update({
-                      'visual_id': None,
-                      'visual_mapping_status': 'inline_only',
-                      'visual_bearing': False,
-                      'rendering_mode': 'inline_text_block' if scene_type != 'equation_block' else 'inline_equation_block',
-                      'notes': 'Non-visual source block preserved inline; no Visual ID assigned.'
-                  })
-                  mappings.append({
-                      'scene_id': sid,
-                      'source_block_id': source_id,
-                      'source_type': block.get('type') if block else scene_type,
-                      'source_global_index': block.get('global_index') if block else None,
-                      'source_chapter_title': block.get('chapter_title') if block else None,
-                      'visual_id': None,
-                      'visual_occurrence_global_no': None,
-                      'visual_occurrence_ref': None,
-                      'mapping_status': 'inline_only',
-                      'mapping_confidence': 1.0,
-                      'mapping_method': 'non_visual_source_type',
-                      'reason': 'Equation, aphorism, or transition block kept as inline manuscript content.'
-                  })
+                  scene.update({'visual_id': None, 'visual_mapping_status': 'inline_only', 'visual_bearing': False, 'rendering_mode': 'inline_text_block' if scene_type != 'equation_block' else 'inline_equation_block', 'notes': 'Non-visual source block preserved inline; no Visual ID assigned.'})
+                  mappings.append({'scene_id': sid, 'source_block_id': source_id, 'source_type': block.get('type') if block else scene_type, 'source_global_index': block.get('global_index') if block else None, 'source_chapter_title': block.get('chapter_title') if block else None, 'visual_id': None, 'visual_occurrence_global_no': None, 'visual_occurrence_ref': None, 'mapping_status': 'inline_only', 'mapping_confidence': 1.0, 'mapping_method': 'non_visual_source_type', 'reason': 'Equation, aphorism, or transition block kept as inline manuscript content.'})
                   continue
-
               if not block:
-                  scene.update({
-                      'visual_id': None,
-                      'visual_mapping_status': 'unmapped',
-                      'visual_bearing': bool(scene.get('visual_bearing')),
-                      'rendering_mode': 'manual_review_required',
-                      'notes': 'No matching source block was found in manuscript.json.'
-                  })
-                  rec = {
-                      'scene_id': sid,
-                      'source_block_id': source_id,
-                      'source_type': scene_type,
-                      'source_global_index': None,
-                      'source_chapter_title': None,
-                      'visual_id': None,
-                      'visual_occurrence_global_no': None,
-                      'visual_occurrence_ref': None,
-                      'mapping_status': 'unmapped',
-                      'mapping_confidence': 0.0,
-                      'mapping_method': 'missing_source_block',
-                      'reason': 'Source block ID was absent from manuscript.json.'
-                  }
+                  scene.update({'visual_id': None, 'visual_mapping_status': 'unmapped', 'visual_bearing': bool(scene.get('visual_bearing')), 'rendering_mode': 'manual_review_required', 'notes': 'No matching source block was found in manuscript.json.'})
+                  rec = {'scene_id': sid, 'source_block_id': source_id, 'source_type': scene_type, 'source_global_index': None, 'source_chapter_title': None, 'visual_id': None, 'visual_occurrence_global_no': None, 'visual_occurrence_ref': None, 'mapping_status': 'unmapped', 'mapping_confidence': 0.0, 'mapping_method': 'missing_source_block', 'reason': 'Source block ID was absent from manuscript.json.'}
                   mappings.append(rec); unmapped.append(rec)
                   continue
-
               row, status, conf, method, overlap = choose_occurrence(block)
               if row and status in {'mapped_high_confidence', 'mapped_medium_confidence', 'manual_review'}:
-                  scene.update({
-                      'visual_id': row.get('visual_id') if status != 'manual_review' else row.get('visual_id'),
-                      'visual_occurrence_global_no': row.get('visual_occurrence_global_no'),
-                      'visual_occurrence_ref': row.get('visual_occurrence_ref'),
-                      'visual_occurrence_index': row.get('occurrence_index'),
-                      'visual_mapping_status': status,
-                      'mapping_confidence': conf,
-                      'mapping_method': method,
-                      'visual_bearing': True,
-                      'rendering_mode': 'visual_asset_runtime' if status != 'manual_review' else 'manual_review_required',
-                      'notes': f"Mapped to complete visual asset catalogue occurrence global {row.get('visual_occurrence_global_no')} with summary-overlap {overlap:.2f}." if status != 'manual_review' else f"Candidate Visual ID requires manual review; summary-overlap {overlap:.2f}."
-                  })
-                  key = occurrence_key(row)
-                  used_occurrence_keys.add(key)
-                  rec = {
-                      'scene_id': sid,
-                      'source_block_id': source_id,
-                      'source_type': block.get('type'),
-                      'source_global_index': block.get('global_index'),
-                      'source_chapter_title': block.get('chapter_title'),
-                      'visual_id': row.get('visual_id'),
-                      'visual_occurrence_global_no': row.get('visual_occurrence_global_no'),
-                      'visual_occurrence_ref': row.get('visual_occurrence_ref'),
-                      'mapping_status': status,
-                      'mapping_confidence': conf,
-                      'mapping_method': method,
-                      'reason': f"Part/chapter/order candidate selected; registry summary overlap={overlap:.2f}."
-                  }
+                  scene.update({'visual_id': row.get('visual_id'), 'visual_occurrence_global_no': row.get('visual_occurrence_global_no'), 'visual_occurrence_ref': row.get('visual_occurrence_ref'), 'visual_occurrence_index': row.get('occurrence_index'), 'visual_mapping_status': status, 'mapping_confidence': conf, 'mapping_method': method, 'visual_bearing': True, 'rendering_mode': 'visual_asset_runtime' if status != 'manual_review' else 'manual_review_required', 'notes': f"Mapped to complete visual asset catalogue occurrence global {row.get('visual_occurrence_global_no')} with summary-overlap {overlap:.2f}." if status != 'manual_review' else f"Candidate Visual ID requires manual review; summary-overlap {overlap:.2f}."})
+                  used_occurrence_keys.add(occurrence_key(row))
+                  rec = {'scene_id': sid, 'source_block_id': source_id, 'source_type': block.get('type'), 'source_global_index': block.get('global_index'), 'source_chapter_title': block.get('chapter_title'), 'visual_id': row.get('visual_id'), 'visual_occurrence_global_no': row.get('visual_occurrence_global_no'), 'visual_occurrence_ref': row.get('visual_occurrence_ref'), 'mapping_status': status, 'mapping_confidence': conf, 'mapping_method': method, 'reason': f"Part/chapter/order candidate selected; registry summary overlap={overlap:.2f}."}
                   mappings.append(rec)
-                  if status == 'manual_review':
-                      manual_review.append(rec)
+                  if status == 'manual_review': manual_review.append(rec)
               else:
-                  scene.update({
-                      'visual_id': None,
-                      'visual_mapping_status': 'unmapped',
-                      'visual_bearing': True,
-                      'rendering_mode': 'manual_review_required',
-                      'notes': 'No credible existing Visual ID occurrence found. No new Visual ID invented.'
-                  })
-                  rec = {
-                      'scene_id': sid,
-                      'source_block_id': source_id,
-                      'source_type': block.get('type'),
-                      'source_global_index': block.get('global_index'),
-                      'source_chapter_title': block.get('chapter_title'),
-                      'visual_id': None,
-                      'visual_occurrence_global_no': None,
-                      'visual_occurrence_ref': None,
-                      'mapping_status': 'unmapped',
-                      'mapping_confidence': 0.0,
-                      'mapping_method': method,
-                      'reason': 'No existing registry occurrence satisfied conservative matching constraints.'
-                  }
+                  scene.update({'visual_id': None, 'visual_mapping_status': 'unmapped', 'visual_bearing': True, 'rendering_mode': 'manual_review_required', 'notes': 'No credible existing Visual ID occurrence found. No new Visual ID invented.'})
+                  rec = {'scene_id': sid, 'source_block_id': source_id, 'source_type': block.get('type'), 'source_global_index': block.get('global_index'), 'source_chapter_title': block.get('chapter_title'), 'visual_id': None, 'visual_occurrence_global_no': None, 'visual_occurrence_ref': None, 'mapping_status': 'unmapped', 'mapping_confidence': 0.0, 'mapping_method': method, 'reason': 'No existing registry occurrence satisfied conservative matching constraints.'}
                   mappings.append(rec); unmapped.append(rec)
 
-          # Validation and counts
           statuses = Counter(s.get('visual_mapping_status') for s in scenes)
           scene_types = Counter(s.get('scene_type') for s in scenes)
           visual_bearing_true = sum(1 for s in scenes if s.get('visual_bearing') is True)
           visual_bearing_false = sum(1 for s in scenes if s.get('visual_bearing') is False)
           mapped_ids = [s.get('visual_id') for s in scenes if s.get('visual_id')]
           absent = sorted(set(mapped_ids) - asset_ids)
-          if absent:
-              raise SystemExit('Mapped visual_id absent from visual-assets.json: ' + ', '.join(absent))
-          if any('visual_mapping_status' not in s for s in scenes):
-              raise SystemExit('Every scene must have visual_mapping_status.')
-          if any('visual_bearing' not in s for s in scenes):
-              raise SystemExit('Every scene must have visual_bearing.')
+          if absent: raise SystemExit('Mapped visual_id absent from visual-assets.json: ' + ', '.join(absent))
+          if any('visual_mapping_status' not in s for s in scenes): raise SystemExit('Every scene must have visual_mapping_status.')
+          if any('visual_bearing' not in s for s in scenes): raise SystemExit('Every scene must have visual_bearing.')
           ledger_scenes = [s for s in scenes if s.get('scene_id') == 'scene-earned-catalogue-first-movement']
-          if len(ledger_scenes) != 1 or ledger_scenes[0].get('visual_mapping_status') != 'special_scene':
-              raise SystemExit('Ledger table special scene validation failed.')
-          if sha256(canonical_path) != EXPECTED_CANONICAL_SHA:
-              raise SystemExit('Canonical substrate SHA-256 changed during mapping.')
+          if len(ledger_scenes) != 1 or ledger_scenes[0].get('visual_mapping_status') != 'special_scene': raise SystemExit('Ledger table special scene validation failed.')
+          if sha256(canonical_path) != EXPECTED_CANONICAL_SHA: raise SystemExit('Canonical substrate SHA-256 changed during mapping.')
 
           used_registry_rows = len(used_occurrence_keys)
           unused_rows = [r for r in occurrence_rows if occurrence_key(r) not in used_occurrence_keys]
           reused_visual_ids = sum(1 for a in assets if (a.get('occurrence_count') or len(a.get('occurrence_refs') or [])) > 1)
-          represented_reused_visual_ids = len({s.get('visual_id') for s in scenes if s.get('visual_id') and next((a for a in assets if a.get('visual_id') == s.get('visual_id') and ((a.get('occurrence_count') or len(a.get('occurrence_refs') or [])) > 1)), None)})
+          reused_ids = {a.get('visual_id') for a in assets if (a.get('occurrence_count') or len(a.get('occurrence_refs') or [])) > 1}
+          represented_reused_visual_ids = len(reused_ids & set(mapped_ids))
           priority_asset_ids = {a.get('visual_id') for a in assets if bool(a.get('priority') or a.get('is_priority') or a.get('priority_visual') or a.get('priority_visual_id') or a.get('build_priority') == 'priority')}
           represented_priority_ids = len(priority_asset_ids & set(mapped_ids))
-
-          counts = {
-              'total_scenes': len(scenes),
-              'scene_types': dict(scene_types),
-              'visual_bearing_true': visual_bearing_true,
-              'visual_bearing_false': visual_bearing_false,
-              'mapped_high_confidence': statuses.get('mapped_high_confidence', 0),
-              'mapped_medium_confidence': statuses.get('mapped_medium_confidence', 0),
-              'attached_to_nearest_visual': statuses.get('attached_to_nearest_visual', 0),
-              'inline_only': statuses.get('inline_only', 0),
-              'manual_review': statuses.get('manual_review', 0),
-              'unmapped': statuses.get('unmapped', 0),
-              'special_scene': statuses.get('special_scene', 0),
-              'registry_occurrence_rows_total': len(occurrence_rows),
-              'registry_occurrence_rows_used': used_registry_rows,
-              'registry_occurrence_rows_not_used': len(unused_rows),
-              'visual_ids_total': len(asset_ids),
-              'mapped_visual_ids_unique': len(set(mapped_ids)),
-              'reused_visual_ids_total': reused_visual_ids,
-              'reused_visual_ids_represented': represented_reused_visual_ids,
-              'priority_visual_ids_total_detected': len(priority_asset_ids),
-              'priority_visual_ids_represented': represented_priority_ids,
-              'canonical_substrate_sha256': sha256(canonical_path)
-          }
-
-          mapping_doc = {
-              'title': 'Theorem Zero Scene to Visual ID Mapping',
-              'version': 'scene-visual-mapping-v1',
-              'inputs': {
-                  'manuscript': 'data/manuscript.json',
-                  'scenes': 'data/scenes.json',
-                  'visual_assets': 'data/visual-assets.json',
-                  'interstitial': 'data/interstitials/earned-catalogue-first-movement.json',
-                  'canonical_substrate': 'canonical/theorem_zero_canonical_substrate_v1_0_final.html'
-              },
-              'counts': counts,
-              'mappings': mappings,
-              'manual_review': manual_review,
-              'unmapped': unmapped,
-              'unused_registry_occurrences': unused_rows
-          }
-
+          counts = {'total_scenes': len(scenes), 'scene_types': dict(scene_types), 'visual_bearing_true': visual_bearing_true, 'visual_bearing_false': visual_bearing_false, 'mapped_high_confidence': statuses.get('mapped_high_confidence', 0), 'mapped_medium_confidence': statuses.get('mapped_medium_confidence', 0), 'attached_to_nearest_visual': statuses.get('attached_to_nearest_visual', 0), 'inline_only': statuses.get('inline_only', 0), 'manual_review': statuses.get('manual_review', 0), 'unmapped': statuses.get('unmapped', 0), 'special_scene': statuses.get('special_scene', 0), 'registry_occurrence_rows_total': len(occurrence_rows), 'registry_occurrence_rows_used': used_registry_rows, 'registry_occurrence_rows_not_used': len(unused_rows), 'visual_ids_total': len(asset_ids), 'mapped_visual_ids_unique': len(set(mapped_ids)), 'reused_visual_ids_total': reused_visual_ids, 'reused_visual_ids_represented': represented_reused_visual_ids, 'priority_visual_ids_total_detected': len(priority_asset_ids), 'priority_visual_ids_represented': represented_priority_ids, 'canonical_substrate_sha256': sha256(canonical_path)}
+          mapping_doc = {'title': 'Theorem Zero Scene to Visual ID Mapping', 'version': 'scene-visual-mapping-v1', 'inputs': {'manuscript': 'data/manuscript.json', 'scenes': 'data/scenes.json', 'visual_assets': 'data/visual-assets.json', 'interstitial': 'data/interstitials/earned-catalogue-first-movement.json', 'canonical_substrate': 'canonical/theorem_zero_canonical_substrate_v1_0_final.html'}, 'counts': counts, 'mappings': mappings, 'manual_review': manual_review, 'unmapped': unmapped, 'unused_registry_occurrences': unused_rows}
           scenes_doc['version'] = 'scene-manifest-v1-mapped'
-          scenes_doc['mapping'] = {
-              'version': 'scene-visual-mapping-v1',
-              'source': 'data/scene-visual-mapping.json',
-              'method': 'conservative chapter/order/summary matching against complete visual asset occurrence rows',
-              'canonical_substrate_sha256': EXPECTED_CANONICAL_SHA
-          }
-
+          scenes_doc['mapping'] = {'version': 'scene-visual-mapping-v1', 'source': 'data/scene-visual-mapping.json', 'method': 'conservative chapter/order/summary matching against complete visual asset occurrence rows', 'canonical_substrate_sha256': EXPECTED_CANONICAL_SHA}
           dump_json(scenes_path, scenes_doc)
           dump_json(mapping_path, mapping_doc)
-
           def md_case_list(items):
-              if not items:
-                  return 'None.\n'
-              lines = []
-              for item in items:
-                  lines.append(f"- `{item.get('scene_id')}` / `{item.get('source_block_id')}` / source global `{item.get('source_global_index')}` / candidate `{item.get('visual_id')}` / {item.get('reason')}")
-              return '\n'.join(lines) + '\n'
-
+              if not items: return 'None.\n'
+              return '\n'.join(f"- `{item.get('scene_id')}` / `{item.get('source_block_id')}` / source global `{item.get('source_global_index')}` / candidate `{item.get('visual_id')}` / {item.get('reason')}" for item in items) + '\n'
           report = f"""# Theorem Zero Scene-to-Visual-ID Mapping Report
 
 ## Input files used
@@ -461,10 +299,7 @@ The earned catalogue interstitial remains `special_scene` with `rendering_mode: 
 """
           report_path.parent.mkdir(parents=True, exist_ok=True)
           report_path.write_text(report, encoding='utf-8')
-
-          # Final JSON syntax validation from disk.
-          load_json(scenes_path)
-          load_json(mapping_path)
+          load_json(scenes_path); load_json(mapping_path)
           print(json.dumps(counts, indent=2))
           PY
       - name: Commit generated mapping outputs
