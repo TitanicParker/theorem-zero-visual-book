@@ -109,16 +109,28 @@ h1 { font-size: clamp(2rem, 5vw, 4rem); }
 .tz-label { font-size: 13px; font-weight: 700; }
 .tz-caption { font-size: 11px; fill: var(--muted); }
 .tz-callout { font-size: 11px; fill: var(--accent); }
+.tz-callout-blue { fill: var(--accent-2); }
+.tz-subtitle { font-size: 10px; fill: var(--muted); }
 .tz-circle { fill: none; stroke: rgba(143, 199, 255, 0.88); stroke-width: 2; }
 .tz-muted { stroke-opacity: 0.42; }
 .tz-fading { stroke-dasharray: 4 7; opacity: 0.48; }
-.tz-line, .tz-radius, .tz-step, .tz-proof, .tz-walk, .tz-ghost-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.tz-line, .tz-radius, .tz-step, .tz-proof, .tz-walk, .tz-ghost-line, .tz-diameter, .tz-carrier { fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .tz-radius { stroke: var(--accent); stroke-width: 3; }
 .tz-step { stroke: var(--accent-2); stroke-width: 3; }
 .tz-proof { stroke: var(--ok); stroke-width: 3; }
+.tz-thin-proof { stroke-width: 1.5; opacity: 0.78; }
+.tz-role-radius { opacity: 0.88; }
+.tz-role-chord { opacity: 0.78; stroke-dasharray: 7 5; }
+.tz-diameter { stroke: var(--accent); stroke-width: 4; opacity: 0.88; }
+.tz-carrier { stroke-width: 2.5; stroke-dasharray: 12 8; opacity: 0.72; }
+.tz-carrier-a { stroke: var(--accent); }
+.tz-carrier-b { stroke: var(--accent-2); }
+.tz-carrier-c { stroke: var(--ok); }
 .tz-walk { stroke: var(--accent); stroke-width: 5; stroke-dasharray: 10 7; opacity: 0.82; }
 .tz-ghost-line { stroke: rgba(245, 239, 228, 0.18); stroke-width: 1.5; }
 .tz-fill { fill: rgba(142, 230, 163, 0.12); stroke: none; }
+.tz-cell-fill-a { fill: rgba(142, 230, 163, 0.14); }
+.tz-cell-fill-b { fill: rgba(143, 199, 255, 0.12); }
 .tz-point { fill: var(--ink); stroke: var(--bg); stroke-width: 2; }
 .tz-origin { fill: var(--accent); }
 .tz-active { fill: var(--ok); }
