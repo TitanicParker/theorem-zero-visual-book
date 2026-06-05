@@ -32,7 +32,33 @@ const VISUAL_ALIASES = {
   V136_fixed_opening_engine: 'V006_radii_chords_role_change',
   V137_practical_rule_fixed_opening: 'V006_radii_chords_role_change',
   V139_radius_to_chord_portability: 'V006_radii_chords_role_change',
-  V143_four_roles_one_length: 'V015_modes_of_sameness'
+  V143_four_roles_one_length: 'V015_modes_of_sameness',
+  V165_circle_as_diameter_carrier: 'V008_three_diameters_straight_angles',
+  V168_instance_vs_family_on_circle: 'V020_right_angle_root_three_lock',
+  V169_circle_symmetry_display: 'V007_six_equilateral_fan',
+  V170_circle_as_local_origin: 'V023_native_coordinate_pressure',
+  V171_circle_vs_field_distinction: 'V023_native_coordinate_pressure',
+  V173_circle_reading_dependency_chain: 'V025_relation_cascade_summary',
+  V174_same_curve_many_lenses: 'V025_relation_cascade_summary',
+  V175_circle_to_station_roles_transition: 'V015_modes_of_sameness',
+  V176_station_label_vs_role: 'V015_modes_of_sameness',
+  V178_station_as_radius_endpoint: 'V006_radii_chords_role_change',
+  V181_neighbour_role_unit_chords_cells: 'V007_six_equilateral_fan',
+  V182_opposite_role_diameters: 'V020_right_angle_root_three_lock',
+  V183_station_as_selection_participant: 'V034_join_attribute_inspector',
+  V186_station_coordinate_memory_role: 'V075_native_basis_uv',
+  V188_station_role_catalogue: 'V015_modes_of_sameness',
+  V189_A_role_timeline: 'V015_modes_of_sameness',
+  V190_identity_survives_use: 'V036_invariance_not_appearance',
+  V191_station_roles_to_selection_transition: 'V034_join_attribute_inspector',
+  V193_available_vs_active_relation: 'V034_join_attribute_inspector',
+  V194_pair_selection_role_switch: 'V034_join_attribute_inspector',
+  V197_selected_triple_family_examples: 'V018_boundary_triangle_gap_catalogue',
+  V200_transformation_identity_survival: 'V036_invariance_not_appearance',
+  V201_difference_then_invariant: 'V036_invariance_not_appearance',
+  V202_field_selection_opportunities: 'V023_native_coordinate_pressure',
+  V203_selection_not_proof_warning: 'V034_join_attribute_inspector',
+  V204_select_inspect_classify_lock_reinspect: 'V025_relation_cascade_summary'
 };
 
 const RENDER_FAMILIES = [
@@ -163,6 +189,50 @@ const RENDER_FAMILIES = [
       'V137_practical_rule_fixed_opening',
       'V139_radius_to_chord_portability',
       'V143_four_roles_one_length'
+    ]
+  },
+  {
+    tier: 'Family 10',
+    title: 'Circle reinspection family',
+    ids: [
+      'V165_circle_as_diameter_carrier',
+      'V168_instance_vs_family_on_circle',
+      'V169_circle_symmetry_display',
+      'V170_circle_as_local_origin',
+      'V171_circle_vs_field_distinction',
+      'V173_circle_reading_dependency_chain',
+      'V174_same_curve_many_lenses',
+      'V175_circle_to_station_roles_transition'
+    ]
+  },
+  {
+    tier: 'Family 11',
+    title: 'Station role family',
+    ids: [
+      'V176_station_label_vs_role',
+      'V178_station_as_radius_endpoint',
+      'V181_neighbour_role_unit_chords_cells',
+      'V182_opposite_role_diameters',
+      'V183_station_as_selection_participant',
+      'V186_station_coordinate_memory_role',
+      'V188_station_role_catalogue',
+      'V189_A_role_timeline',
+      'V190_identity_survives_use',
+      'V191_station_roles_to_selection_transition'
+    ]
+  },
+  {
+    tier: 'Family 12',
+    title: 'Selection activation family',
+    ids: [
+      'V193_available_vs_active_relation',
+      'V194_pair_selection_role_switch',
+      'V197_selected_triple_family_examples',
+      'V200_transformation_identity_survival',
+      'V201_difference_then_invariant',
+      'V202_field_selection_opportunities',
+      'V203_selection_not_proof_warning',
+      'V204_select_inspect_classify_lock_reinspect'
     ]
   }
 ];
