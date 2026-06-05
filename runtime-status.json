@@ -1,13 +1,13 @@
 {
   "project": "Theorem Zero Visual Book",
-  "runtime_build": "2026-06-05-r7",
+  "runtime_build": "2026-06-05-r8",
   "pages_source": "main / root",
   "entrypoint": "index.html",
-  "reader_mode": "canonical substrate HTML browser shell with persistent bottom navigation",
+  "reader_mode": "canonical substrate Tier 0 plus arrow-accessible rendered visual families",
   "landing_screen": {
     "default_view": "canonical/theorem_zero_canonical_substrate_v1_0_final.html",
-    "implementation": "index.html loads the locked canonical substrate HTML in a full-window iframe",
-    "persistent_navigation": "bottom back/forward controls supplied by outer browser shell",
+    "implementation": "index.html loads the locked canonical substrate HTML in a full-window iframe as Tier 0",
+    "persistent_navigation": "bottom back/forward controls cycle through Tier 0 and implemented render-family screens",
     "canonical_html_modified": false
   },
   "substrate_contract_enforced": true,
@@ -21,10 +21,17 @@
     "V006_radii_chords_role_change",
     "V007_six_equilateral_fan",
     "V008_three_diameters_straight_angles",
-    "V009_primary_parallel_families"
+    "V009_primary_parallel_families",
+    "V010_local_inventory_plate",
+    "V011_pair_catalogue_unit_classes",
+    "V012_pair_catalogue_length_classes",
+    "V013_segments_vs_carriers",
+    "V014_direction_vs_line_parallelism",
+    "V015_modes_of_sameness"
   ],
   "renderer_family_completed": [
-    "first-circle construction foundation V001-V009"
+    "first-circle construction foundation V001-V009",
+    "pair and relation family foundation V010-V015"
   ],
   "renderer_expansion_policy": "renderer families over canonical substrate, not bespoke scene files",
   "data_files": [
