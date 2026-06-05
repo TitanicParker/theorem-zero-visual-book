@@ -1,0 +1,20 @@
+{
+  "project": "Theorem Zero Visual Book",
+  "runtime_build": "2026-06-05-r2",
+  "pages_source": "main / root",
+  "entrypoint": "index.html",
+  "data_files": [
+    "data/manuscript.json",
+    "data/scenes.json",
+    "data/visual-assets.json",
+    "data/scene-visual-mapping.json",
+    "data/interstitials/earned-catalogue-first-movement.json"
+  ],
+  "expected_counts": {
+    "scenes": 366,
+    "mapped_high_confidence": 324,
+    "mapped_medium_confidence": 24,
+    "unmapped": 9,
+    "registry_occurrence_rows_used": 348
+  }
+}
