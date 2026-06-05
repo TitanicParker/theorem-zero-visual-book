@@ -1,3 +1,5 @@
+import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r3';
+
 const DATA_PATHS = {
   manuscript: 'data/manuscript.json',
   scenes: 'data/scenes.json',
@@ -47,7 +49,7 @@ function buildSummary(manuscript, scenes, mapping) {
   return `
     <section class="summary-card">
       <h2>Mapped runtime source</h2>
-      <p class="lede">This preview renders manuscript blocks through the mapped scene manifest. It does not mutate the locked canonical substrate.</p>
+      <p class="lede">This preview renders manuscript blocks through the mapped scene manifest. The first five Visual IDs now execute as SVG substrate renderers.</p>
       <div class="summary-grid">
         <div class="metric"><strong>${manuscript.counts?.chapters ?? 0}</strong><span>chapters</span></div>
         <div class="metric"><strong>${scenes.scenes?.length ?? 0}</strong><span>scenes</span></div>
@@ -126,6 +128,10 @@ function renderVisualPanel(scene, asset) {
     `;
   }
 
+  const rendererBadge = hasSubstrateRenderer(asset.visual_id)
+    ? '<span class="badge ok">substrate renderer active</span>'
+    : '<span class="badge">registry notes only</span>';
+
   return `
     <p class="visual-kicker">Visual asset</p>
     <h3 class="visual-id">${escapeHtml(asset.visual_id)}</h3>
@@ -133,7 +139,9 @@ function renderVisualPanel(scene, asset) {
       <span class="badge ${sceneStatusClass(status)}">${escapeHtml(status)}</span>
       <span class="badge">global ${escapeHtml(scene.visual_occurrence_global_no)}</span>
       <span class="badge">${escapeHtml(asset.build_tier)}</span>
+      ${rendererBadge}
     </div>
+    <div class="substrate-mount" data-visual-id="${escapeHtml(asset.visual_id)}"></div>
     <p>${escapeHtml(asset.canonical_summary)}</p>
     <ul class="variant-list">
       <li><strong>Activation:</strong> ${escapeHtml(asset.activation_variants?.[0] ?? '')}</li>
@@ -154,7 +162,18 @@ function renderScene(scene, block, asset) {
     <h3 class="scene-title">${escapeHtml(block?.chapter_title ?? scene.scene_id)}</h3>
     ${blockTextHtml(block, scene)}
   `;
-  node.querySelector('.visual-panel').innerHTML = renderVisualPanel(scene, asset);
+
+  const panel = node.querySelector('.visual-panel');
+  panel.innerHTML = renderVisualPanel(scene, asset);
+
+  if (asset && hasSubstrateRenderer(asset.visual_id)) {
+    const mount = panel.querySelector('.substrate-mount');
+    const stage = document.createElement('div');
+    stage.className = 'substrate-stage';
+    stage.appendChild(renderSubstrateVisual(asset.visual_id));
+    mount.appendChild(stage);
+  }
+
   return node;
 }
 
