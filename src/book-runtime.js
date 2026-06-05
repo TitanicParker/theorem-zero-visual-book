@@ -78,7 +78,17 @@ const VISUAL_ALIASES = {
   V280_body_sameness_invariants: 'V036_invariance_not_appearance',
   V281_lawful_cuts_decomposition: 'V034_join_attribute_inspector',
   V282_accountable_decomposition: 'V007_six_equilateral_fan',
-  V284_assembly_to_recomposition_chain: 'V025_relation_cascade_summary'
+  V284_assembly_to_recomposition_chain: 'V025_relation_cascade_summary',
+  V296_larger_triangle_decomposition_options: 'V018_boundary_triangle_gap_catalogue',
+  V297_decomposition_disciplined: 'V034_join_attribute_inspector',
+  V298_lawful_vs_arbitrary_cutting: 'V034_join_attribute_inspector',
+  V299_cut_availability_rule: 'V034_join_attribute_inspector',
+  V301_cut_changes_reading_not_surface: 'V007_six_equilateral_fan',
+  V302_piece_account_checklist: 'V025_relation_cascade_summary',
+  V303_diagram_vs_piece_accounting: 'V036_invariance_not_appearance',
+  V304_cell_grammar_of_parts: 'V007_six_equilateral_fan',
+  V305_right_triangle_as_half_cell: 'V020_right_angle_root_three_lock',
+  V306_distinct_routes_warning: 'V034_join_attribute_inspector'
 };
 
 const RENDER_FAMILIES = [
@@ -285,6 +295,22 @@ const RENDER_FAMILIES = [
       'V281_lawful_cuts_decomposition',
       'V282_accountable_decomposition',
       'V284_assembly_to_recomposition_chain'
+    ]
+  },
+  {
+    tier: 'Family 15',
+    title: 'Decomposition and piece-accounting placeholder family',
+    ids: [
+      'V296_larger_triangle_decomposition_options',
+      'V297_decomposition_disciplined',
+      'V298_lawful_vs_arbitrary_cutting',
+      'V299_cut_availability_rule',
+      'V301_cut_changes_reading_not_surface',
+      'V302_piece_account_checklist',
+      'V303_diagram_vs_piece_accounting',
+      'V304_cell_grammar_of_parts',
+      'V305_right_triangle_as_half_cell',
+      'V306_distinct_routes_warning'
     ]
   }
 ];
