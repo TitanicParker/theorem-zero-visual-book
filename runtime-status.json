@@ -1,6 +1,6 @@
 {
   "project": "Theorem Zero Visual Book",
-  "runtime_build": "2026-06-05-r4",
+  "runtime_build": "2026-06-05-r5",
   "pages_source": "main / root",
   "entrypoint": "index.html",
   "substrate_contract_enforced": true,
@@ -9,7 +9,14 @@
     "V002_carried_opening_to_B",
     "V003_forced_equilateral_OAB",
     "V004_six_step_boundary_closure",
-    "V005_release_curve_seven_point_residue"
+    "V005_release_curve_seven_point_residue",
+    "V006_radii_chords_role_change",
+    "V007_six_equilateral_fan",
+    "V008_three_diameters_straight_angles",
+    "V009_primary_parallel_families"
+  ],
+  "renderer_family_completed": [
+    "first-circle construction foundation V001-V009"
   ],
   "renderer_expansion_policy": "renderer families over canonical substrate, not bespoke scene files",
   "data_files": [
