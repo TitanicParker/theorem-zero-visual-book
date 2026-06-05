@@ -1,16 +1,31 @@
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
-const P = {
-  O: { x: 180, y: 150, label: 'O' },
-  A: { x: 270, y: 150, label: 'A' },
-  B: { x: 225, y: 72.06, label: 'B' },
-  C: { x: 135, y: 72.06, label: 'C' },
-  D: { x: 90, y: 150, label: 'D' },
-  E: { x: 135, y: 227.94, label: 'E' },
-  F: { x: 225, y: 227.94, label: 'F' }
+const ORIGIN = { x: 180, y: 150 };
+const R = 90;
+const SQRT3_OVER_2 = 0.8660254037844386;
+
+const AXIAL = {
+  O: { q: 0, r: 0, label: 'O' },
+  A: { q: -1, r: 0, label: 'A' },
+  B: { q: 0, r: -1, label: 'B' },
+  C: { q: 1, r: -1, label: 'C' },
+  D: { q: 1, r: 0, label: 'D' },
+  E: { q: 0, r: 1, label: 'E' },
+  F: { q: -1, r: 1, label: 'F' }
 };
 
-const R = 90;
+function project({ q, r, label }) {
+  return {
+    x: ORIGIN.x + R * (q + 0.5 * r),
+    y: ORIGIN.y + R * (SQRT3_OVER_2 * r),
+    q,
+    r,
+    label
+  };
+}
+
+const P = Object.fromEntries(Object.entries(AXIAL).map(([name, coord]) => [name, project(coord)]));
+
 const FIRST_FIVE = new Set([
   'V001_first_radius_sweep',
   'V002_carried_opening_to_B',
@@ -40,9 +55,11 @@ function line(a, b, className = 'tz-line') {
 
 function point(name, className = 'tz-point') {
   const p = P[name];
+  const dx = name === 'A' || name === 'D' ? -18 : 8;
+  const dy = name === 'E' || name === 'F' ? 18 : -8;
   return el('g', {}, [
     el('circle', { cx: p.x, cy: p.y, r: 4.5, class: className }),
-    text(p.x + 8, p.y - 8, p.label)
+    text(p.x + dx, p.y + dy, p.label)
   ]);
 }
 
@@ -68,6 +85,7 @@ function baseSvg(title) {
   });
   svg.appendChild(el('rect', { x: 12, y: 12, width: 336, height: 276, rx: 18, class: 'tz-frame' }));
   svg.appendChild(text(22, 34, title, 'tz-title'));
+  svg.appendChild(text(22, 52, 'canonical orientation: A west, B north-west, C north-east', 'tz-subtitle'));
   return svg;
 }
 
@@ -83,8 +101,8 @@ function renderV001() {
   svg.appendChild(circle('tz-circle tz-animate-circle'));
   svg.appendChild(point('O', 'tz-point tz-origin'));
   svg.appendChild(point('A'));
-  svg.appendChild(text(190, 143, 'fixed opening', 'tz-callout'));
-  appendCaption(svg, 'O fixes the opening; the first circle records equality from O.');
+  svg.appendChild(text(100, 143, 'fixed opening', 'tz-callout'));
+  appendCaption(svg, 'O fixes the opening; A is the west unit station on the canonical substrate.');
   return svg;
 }
 
@@ -96,23 +114,23 @@ function renderV002() {
   svg.appendChild(point('O', 'tz-point tz-origin'));
   svg.appendChild(point('A'));
   svg.appendChild(point('B', 'tz-point tz-active'));
-  svg.appendChild(text(240, 105, 'same opening carried', 'tz-callout'));
-  appendCaption(svg, 'The compass opening moves from A and marks B on the first boundary.');
+  svg.appendChild(text(86, 105, 'same opening carried', 'tz-callout'));
+  appendCaption(svg, 'The compass opening moves from west station A to north-west station B.');
   return svg;
 }
 
 function renderV003() {
   const svg = baseSvg('V003 forced equilateral OAB');
   svg.appendChild(circle('tz-circle tz-muted'));
+  svg.appendChild(el('polygon', { points: `${P.O.x},${P.O.y} ${P.A.x},${P.A.y} ${P.B.x},${P.B.y}`, class: 'tz-fill' }));
   svg.appendChild(line(P.O, P.A, 'tz-proof'));
   svg.appendChild(line(P.O, P.B, 'tz-proof'));
   svg.appendChild(line(P.A, P.B, 'tz-proof'));
-  svg.appendChild(el('polygon', { points: `${P.O.x},${P.O.y} ${P.A.x},${P.A.y} ${P.B.x},${P.B.y}`, class: 'tz-fill' }));
   svg.appendChild(point('O', 'tz-point tz-origin'));
   svg.appendChild(point('A'));
   svg.appendChild(point('B', 'tz-point tz-active'));
-  svg.appendChild(text(206, 132, 'OA = OB = AB', 'tz-callout'));
-  appendCaption(svg, 'Three equal carried openings force the equilateral triangle.');
+  svg.appendChild(text(104, 132, 'OA = OB = AB', 'tz-callout'));
+  appendCaption(svg, 'Three equal substrate unit relations force the equilateral triangle OAB.');
   return svg;
 }
 
@@ -125,7 +143,7 @@ function renderV004() {
   }
   svg.appendChild(el('path', { d: arcPath(names), class: 'tz-walk tz-animate-draw' }));
   ['O', 'A', 'B', 'C', 'D', 'E', 'F'].forEach((name) => svg.appendChild(point(name, name === 'O' ? 'tz-point tz-origin' : 'tz-point')));
-  appendCaption(svg, 'The fixed opening steps around its own circle and closes after six stations.');
+  appendCaption(svg, 'The fixed opening steps A-B-C-D-E-F and closes on the canonical circle.');
   return svg;
 }
 
@@ -134,8 +152,8 @@ function renderV005() {
   svg.appendChild(circle('tz-circle tz-fading'));
   ['A', 'B', 'C', 'D', 'E', 'F'].forEach((name) => svg.appendChild(line(P.O, P[name], 'tz-ghost-line')));
   ['O', 'A', 'B', 'C', 'D', 'E', 'F'].forEach((name) => svg.appendChild(point(name, name === 'O' ? 'tz-point tz-origin' : 'tz-point tz-active')));
-  svg.appendChild(text(118, 44, 'curve released', 'tz-callout'));
-  appendCaption(svg, 'When the curve is released, the lawful residue is O plus six stations.');
+  svg.appendChild(text(112, 68, 'curve released', 'tz-callout'));
+  appendCaption(svg, 'When the curve is released, the lawful residue is O plus A-F.');
   return svg;
 }
 
