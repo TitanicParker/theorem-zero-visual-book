@@ -20,7 +20,28 @@ const ACTIVE_VISUAL_IDS = new Set([
   'V006_radii_chords_role_change',
   'V007_six_equilateral_fan',
   'V008_three_diameters_straight_angles',
-  'V009_primary_parallel_families'
+  'V009_primary_parallel_families',
+  'V010_local_inventory_plate',
+  'V011_pair_catalogue_unit_classes',
+  'V012_pair_catalogue_length_classes',
+  'V013_segments_vs_carriers',
+  'V014_direction_vs_line_parallelism',
+  'V015_modes_of_sameness'
+]);
+
+const UNIT_CHORDS = Object.freeze(['AB', 'BC', 'CD', 'DE', 'EF', 'FA']);
+const RADII = Object.freeze(['OA', 'OB', 'OC', 'OD', 'OE', 'OF']);
+const NEXT_CHORDS = Object.freeze(['AC', 'BD', 'CE', 'DF', 'EA', 'FB']);
+const DIAMETERS = Object.freeze(['AD', 'BE', 'CF']);
+const CARRIER_GROUPS = Object.freeze([
+  Object.freeze(['AO', 'OD', 'AD']),
+  Object.freeze(['BO', 'OE', 'BE']),
+  Object.freeze(['CO', 'OF', 'CF'])
+]);
+const PARALLEL_FAMILIES = Object.freeze([
+  Object.freeze(['AB', 'CF', 'DE']),
+  Object.freeze(['BC', 'AD', 'EF']),
+  Object.freeze(['CD', 'BE', 'FA'])
 ]);
 
 function el(name, attrs = {}, children = []) {
@@ -71,8 +92,21 @@ function allStationNames() {
   return ['O', ...canonicalPerimeterNames()];
 }
 
+function pairNames(pair) {
+  return pair.split('');
+}
+
 function line(a, b, className = 'tz-line') {
   return el('line', { x1: a.x, y1: a.y, x2: b.x, y2: b.y, class: className });
+}
+
+function pairLine(points, pair, className = 'tz-line') {
+  const [a, b] = pairNames(pair);
+  return line(points[a], points[b], className);
+}
+
+function appendPairSet(svg, points, pairs, className) {
+  pairs.forEach((pair) => svg.appendChild(pairLine(points, pair, className)));
 }
 
 function extendedLine(a, b, className = 'tz-carrier') {
@@ -169,6 +203,28 @@ function appendBoundarySteps(svg, points, className = 'tz-step') {
 
 function appendRadii(svg, points, className = 'tz-radius') {
   canonicalPerimeterNames().forEach((name) => svg.appendChild(line(points.O, points[name], className)));
+}
+
+function appendDiameters(svg, points, className = 'tz-diameter') {
+  appendPairSet(svg, points, DIAMETERS, className);
+}
+
+function appendFirstCircleBase(svg, points) {
+  svg.appendChild(circle(points, 'tz-circle tz-muted'));
+  appendAllStations(svg, points);
+}
+
+function appendParallelFamilies(svg, points) {
+  PARALLEL_FAMILIES.forEach((family, index) => {
+    appendPairSet(svg, points, family, `tz-carrier-segment tz-family-${index + 1}`);
+  });
+}
+
+function appendCarrierCollapse(svg, points) {
+  svg.appendChild(extendedLine(points.A, points.D, 'tz-carrier tz-carrier-a'));
+  svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b'));
+  svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c'));
+  CARRIER_GROUPS.forEach((group, index) => appendPairSet(svg, points, group, `tz-nested-segment tz-family-${index + 1}`));
 }
 
 function renderV001() {
@@ -276,10 +332,8 @@ function renderV008() {
   return withVerifiedSubstrate('V008 three diameters', (points) => {
     const svg = baseSvg('V008 three diameters');
     svg.appendChild(circle(points, 'tz-circle tz-muted'));
-    svg.appendChild(line(points.A, points.D, 'tz-diameter tz-animate-draw'));
-    svg.appendChild(line(points.B, points.E, 'tz-diameter tz-animate-draw'));
-    svg.appendChild(line(points.C, points.F, 'tz-diameter tz-animate-draw'));
-    appendAllStations(svg, points, ['A', 'B', 'C', 'D', 'E', 'F']);
+    appendDiameters(svg, points, 'tz-diameter tz-animate-draw');
+    appendAllStations(svg, points, canonicalPerimeterNames());
     svg.appendChild(text(136, 142, 'AD · BE · CF', 'tz-callout'));
     svg.appendChild(text(124, 160, 'three straight centre-lines', 'tz-callout'));
     appendCaption(svg, 'Opposite boundary stations form three diameters through O and three straight angles.');
@@ -294,10 +348,100 @@ function renderV009() {
     svg.appendChild(extendedLine(points.A, points.D, 'tz-carrier tz-carrier-a'));
     svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b'));
     svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c'));
-    appendAllStations(svg, points, ['A', 'B', 'C', 'D', 'E', 'F']);
+    appendAllStations(svg, points, canonicalPerimeterNames());
     svg.appendChild(text(42, 78, 'q/r/q+r carriers', 'tz-callout'));
     svg.appendChild(text(42, 94, 'native triangular grain', 'tz-callout'));
     appendCaption(svg, 'The first circle discloses the three native carrier directions; no square grid is introduced.');
+    return svg;
+  });
+}
+
+function renderV010() {
+  return withVerifiedSubstrate('V010 local inventory plate', (points) => {
+    const svg = baseSvg('V010 local inventory');
+    appendFirstCircleBase(svg, points);
+    appendRadii(svg, points, 'tz-radius tz-role-radius');
+    appendBoundarySteps(svg, points, 'tz-step tz-role-chord');
+    appendDiameters(svg, points, 'tz-diameter tz-soft');
+    appendParallelFamilies(svg, points);
+    svg.appendChild(text(42, 78, 'inventory: O, A-F', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'radii · chords · cells · diameters · carriers', 'tz-callout'));
+    appendCaption(svg, 'The first circle has already earned centre, radii, chords, cells, diameters, and carrier families.');
+    return svg;
+  });
+}
+
+function renderV011() {
+  return withVerifiedSubstrate('V011 pair catalogue unit classes', (points) => {
+    const svg = baseSvg('V011 pair catalogue: unit classes');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendRadii(svg, points, 'tz-radius tz-role-radius');
+    appendPairSet(svg, points, UNIT_CHORDS, 'tz-step tz-role-chord');
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(42, 82, '21 possible joins', 'tz-callout'));
+    svg.appendChild(text(42, 98, '6 radii + 6 unit chords', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'The pair catalogue begins by separating the twelve unit-length joins from all twenty-one joins.');
+    return svg;
+  });
+}
+
+function renderV012() {
+  return withVerifiedSubstrate('V012 pair catalogue length classes', (points) => {
+    const svg = baseSvg('V012 pair length classes');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendPairSet(svg, points, UNIT_CHORDS, 'tz-unit-class');
+    appendRadii(svg, points, 'tz-unit-class');
+    appendPairSet(svg, points, NEXT_CHORDS, 'tz-next-class');
+    appendDiameters(svg, points, 'tz-diameter');
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(42, 78, 'unit · next-neighbour · diameter', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'sqrt3 pending; diameter length two', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'The twenty-one joins sort into unit joins, next-neighbour chords, and diameters.');
+    return svg;
+  });
+}
+
+function renderV013() {
+  return withVerifiedSubstrate('V013 segments vs carriers', (points) => {
+    const svg = baseSvg('V013 segments vs carriers');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendCarrierCollapse(svg, points);
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(42, 78, 'segment ≠ carrier', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'finite joins collapse onto straight carriers', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'AO, OD, and AD are different segments on one carrier; joins and carriers are distinct.');
+    return svg;
+  });
+}
+
+function renderV014() {
+  return withVerifiedSubstrate('V014 direction vs line parallelism', (points) => {
+    const svg = baseSvg('V014 direction and parallelism');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendParallelFamilies(svg, points);
+    svg.appendChild(extendedLine(points.A, points.D, 'tz-carrier tz-carrier-a tz-soft'));
+    svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b tz-soft'));
+    svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c tz-soft'));
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(42, 78, 'same direction under offset', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'parallelism is preserved direction', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'A direction can be carried by several distinct lines; parallelism is direction preserved under offset.');
+    return svg;
+  });
+}
+
+function renderV015() {
+  return withVerifiedSubstrate('V015 modes of sameness', (points) => {
+    const svg = baseSvg('V015 modes of sameness');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendPairSet(svg, points, ['OA', 'AB'], 'tz-unit-class');
+    appendPairSet(svg, points, ['AO', 'AD'], 'tz-diameter');
+    appendPairSet(svg, points, ['AB', 'DE'], 'tz-carrier-segment tz-family-1');
+    appendPairSet(svg, points, ['BC', 'EF'], 'tz-carrier-segment tz-family-2');
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(42, 78, 'same length · carrier · direction · role', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'identity depends on inspected relation', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'The same local system supports several different sameness readings.');
     return svg;
   });
 }
@@ -311,7 +455,13 @@ const RENDERERS = {
   V006_radii_chords_role_change: renderV006,
   V007_six_equilateral_fan: renderV007,
   V008_three_diameters_straight_angles: renderV008,
-  V009_primary_parallel_families: renderV009
+  V009_primary_parallel_families: renderV009,
+  V010_local_inventory_plate: renderV010,
+  V011_pair_catalogue_unit_classes: renderV011,
+  V012_pair_catalogue_length_classes: renderV012,
+  V013_segments_vs_carriers: renderV013,
+  V014_direction_vs_line_parallelism: renderV014,
+  V015_modes_of_sameness: renderV015
 };
 
 export function hasSubstrateRenderer(visualId) {
