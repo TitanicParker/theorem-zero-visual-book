@@ -1,4 +1,4 @@
-import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r10';
+import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r11';
 
 const position = document.querySelector('#reader-position');
 const backButton = document.querySelector('#reader-back');
@@ -47,7 +47,13 @@ const RENDER_FAMILIES = [
       'V016_triple_catalogue_degenerate_genuine',
       'V017_centre_boundary_triples',
       'V018_boundary_triangle_gap_catalogue',
-      'V019_identity_vs_instance'
+      'V019_identity_vs_instance',
+      'V042_triple_count_lock_35_3_32',
+      'V045_boundary_gap_family_examples',
+      'V046_boundary_catalogue_count_lock',
+      'V047_full_triple_catalogue_summary',
+      'V048_triples_generate_angle_families',
+      'V049_angle_from_triple_forcing'
     ]
   },
   {
@@ -56,7 +62,14 @@ const RENDER_FAMILIES = [
     ids: [
       'V020_right_angle_root_three_lock',
       'V021_notice_vs_use_root_three',
-      'V022_ratio_pattern_30_60_90'
+      'V022_ratio_pattern_30_60_90',
+      'V050_right_angle_family_pending',
+      'V052_triple_catalogue_to_right_angle_transition',
+      'V053_BFE_proof_setup',
+      'V054_diameter_forces_right_angle',
+      'V069_trig_names_from_ratios',
+      'V070_BFE_trig_values',
+      'V071_trig_dependency_chain'
     ]
   },
   {
@@ -66,7 +79,13 @@ const RENDER_FAMILIES = [
       'V023_native_coordinate_pressure',
       'V024_algebra_as_memory',
       'V025_relation_cascade_summary',
-      'V026_field_disclosure_closing'
+      'V026_field_disclosure_closing',
+      'V072_unit_radius_projection_reading',
+      'V073_ratio_to_coordinate_transition',
+      'V075_native_basis_uv',
+      'V076_negative_native_steps',
+      'V077_route_vs_straight_distance',
+      'V078_native_distance_derivation'
     ]
   }
 ];
