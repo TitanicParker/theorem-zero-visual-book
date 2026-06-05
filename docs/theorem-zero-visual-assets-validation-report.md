@@ -16,7 +16,7 @@ PASS: `data/visual-assets.json` is valid JSON and matches the complete catalogue
 
 ## Generated JSON SHA-256
 
-`37cb507e6f152f403a58aca28cb4121b1f8780bda3b3bb388337778dd1ec3962`
+`dc3e139f02107bde5ea5fada39ab807ed3dd0e7877ac0874f504d76322c3ba7f`
 
 ## Notes
 
