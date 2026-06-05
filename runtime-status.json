@@ -1,8 +1,17 @@
 {
   "project": "Theorem Zero Visual Book",
-  "runtime_build": "2026-06-05-r2",
+  "runtime_build": "2026-06-05-r4",
   "pages_source": "main / root",
   "entrypoint": "index.html",
+  "substrate_contract_enforced": true,
+  "first_rendered_visual_ids": [
+    "V001_first_radius_sweep",
+    "V002_carried_opening_to_B",
+    "V003_forced_equilateral_OAB",
+    "V004_six_step_boundary_closure",
+    "V005_release_curve_seven_point_residue"
+  ],
+  "renderer_expansion_policy": "renderer families over canonical substrate, not bespoke scene files",
   "data_files": [
     "data/manuscript.json",
     "data/scenes.json",
@@ -15,6 +24,8 @@
     "mapped_high_confidence": 324,
     "mapped_medium_confidence": 24,
     "unmapped": 9,
-    "registry_occurrence_rows_used": 348
+    "registry_occurrence_rows_used": 348,
+    "unique_visual_ids": 255,
+    "priority_visual_ids": 94
   }
 }
