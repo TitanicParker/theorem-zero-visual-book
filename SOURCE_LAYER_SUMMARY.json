@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md",
+    "data/interstitials/earned-catalogue-first-movement.json",
+    "data/interstitials/earned-catalogue-first-movement.md",
+    "data/manuscript.json",
+    "data/manuscript.md",
+    "data/scenes.json"
+  ],
+  "counts": {
+    "parts": 2,
+    "chapters": 23,
+    "paragraph_like_blocks": 365,
+    "interstitials": 1
+  },
+  "last_part_one_chapter_ten_block": "P1-C10-010",
+  "scene_count": 366,
+  "interstitial_rows": 18,
+  "sha256": {
+    "README.md": "1e3e6ce7723c2c76eb81812b173958093a779564785c50b7e603af163b14f873",
+    "data/interstitials/earned-catalogue-first-movement.json": "f66e3c6c4e0880001aa93d835e61ad804e3ad50582653d2df27aa1d7ca8c1c9b",
+    "data/interstitials/earned-catalogue-first-movement.md": "1c04226dd4084f0d62faf2a2fbd7483659d799365c04f7c074b0c6a530a925b3",
+    "data/manuscript.json": "de7bb54b556c7d931e64e51b632178c79e301b89c24f5ff39bd93acf509b8ad0",
+    "data/manuscript.md": "95333f9cc353e8eab11c5ffd0cca9e0e8787597627447e53728046eac32b850e",
+    "data/scenes.json": "ab5717353e6b3adafb515d808d5ca203b45a75cd3fdd921f9ce4c00e484d9452"
+  }
+}
