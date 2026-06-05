@@ -69,7 +69,16 @@ const VISUAL_ALIASES = {
   V224_same_length_inspector: 'V006_radii_chords_role_change',
   V226_same_direction_parallelism: 'V014_direction_vs_line_parallelism',
   V227_same_angle_pattern: 'V020_right_angle_root_three_lock',
-  V233_resemblance_vs_invariant: 'V036_invariance_not_appearance'
+  V233_resemblance_vs_invariant: 'V036_invariance_not_appearance',
+  V275_identity_assembly_into_bodies: 'V025_relation_cascade_summary',
+  V276_lawful_assembly_not_arbitrary_drawing: 'V034_join_attribute_inspector',
+  V277_first_hexagon_as_assembled_body: 'V007_six_equilateral_fan',
+  V278_two_cell_rhombus_assembly: 'V007_six_equilateral_fan',
+  V279_boundary_vs_cell_reading: 'V007_six_equilateral_fan',
+  V280_body_sameness_invariants: 'V036_invariance_not_appearance',
+  V281_lawful_cuts_decomposition: 'V034_join_attribute_inspector',
+  V282_accountable_decomposition: 'V007_six_equilateral_fan',
+  V284_assembly_to_recomposition_chain: 'V025_relation_cascade_summary'
 };
 
 const RENDER_FAMILIES = [
@@ -261,6 +270,21 @@ const RENDER_FAMILIES = [
       'V226_same_direction_parallelism',
       'V227_same_angle_pattern',
       'V233_resemblance_vs_invariant'
+    ]
+  },
+  {
+    tier: 'Family 14',
+    title: 'Body assembly placeholder family',
+    ids: [
+      'V275_identity_assembly_into_bodies',
+      'V276_lawful_assembly_not_arbitrary_drawing',
+      'V277_first_hexagon_as_assembled_body',
+      'V278_two_cell_rhombus_assembly',
+      'V279_boundary_vs_cell_reading',
+      'V280_body_sameness_invariants',
+      'V281_lawful_cuts_decomposition',
+      'V282_accountable_decomposition',
+      'V284_assembly_to_recomposition_chain'
     ]
   }
 ];
