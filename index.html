@@ -3,37 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="runtime-build" content="theorem-zero-runtime-preview-2026-06-05-r6" />
-  <title>Theorem Zero Visual Book</title>
-  <link rel="stylesheet" href="src/book-runtime.css?v=20260605-r6" />
+  <meta name="runtime-build" content="theorem-zero-runtime-preview-2026-06-05-r7" />
+  <title>Theorem Zero — Canonical Substrate</title>
+  <link rel="stylesheet" href="src/book-runtime.css?v=20260605-r7" />
 </head>
 <body>
-  <main id="book-reader" class="reader-shell" aria-live="polite">
-    <section class="lens-stage" aria-label="Theorem Zero canonical substrate landing view">
-      <div class="reader-brand">
-        <p class="eyebrow">Theorem Zero</p>
-        <h1>Canonical Substrate</h1>
-        <p class="build-marker">Runtime build: 2026-06-05-r6 / substrate landing lens / first-circle family active</p>
-      </div>
-
-      <div class="substrate-lens-wrap">
-        <div id="substrate-viewport" class="substrate-viewport" aria-label="Circular canonical substrate viewport"></div>
-      </div>
-
-      <aside id="scene-text-panel" class="scene-text-panel" aria-label="Current scene text">
-        <p class="scene-kicker">Loading</p>
-        <h2>Preparing substrate</h2>
-        <p>Fetching the manuscript, mapped scenes, visual assets, and canonical renderer registry.</p>
-      </aside>
-    </section>
+  <main class="canonical-browser-shell" aria-label="Theorem Zero canonical substrate browser">
+    <iframe
+      id="canonical-substrate-frame"
+      class="canonical-substrate-frame"
+      src="canonical/theorem_zero_canonical_substrate_v1_0_final.html"
+      title="Theorem Zero canonical substrate v1.0"
+      loading="eager"
+    ></iframe>
   </main>
 
   <nav class="reader-step-controls" aria-label="Screen navigation">
     <button id="reader-back" type="button" aria-label="Back one screen">←</button>
-    <span id="reader-position" class="reader-position">substrate</span>
+    <span id="reader-position" class="reader-position">canonical substrate</span>
     <button id="reader-forward" type="button" aria-label="Forward one screen">→</button>
   </nav>
 
-  <script type="module" src="src/book-runtime.js?v=20260605-r6"></script>
+  <script type="module" src="src/book-runtime.js?v=20260605-r7"></script>
 </body>
 </html>
