@@ -11,7 +11,6 @@ const R = 90;
 const VIEW_BOX = '0 0 360 300';
 
 const UNIT_CHORDS = Object.freeze(['AB', 'BC', 'CD', 'DE', 'EF', 'FA']);
-const RADII = Object.freeze(['OA', 'OB', 'OC', 'OD', 'OE', 'OF']);
 const NEXT_CHORDS = Object.freeze(['AC', 'BD', 'CE', 'DF', 'EA', 'FB']);
 const DIAMETERS = Object.freeze(['AD', 'BE', 'CF']);
 const CENTRE_FAN = Object.freeze([['O', 'A', 'B'], ['O', 'B', 'C'], ['O', 'C', 'D'], ['O', 'D', 'E'], ['O', 'E', 'F'], ['O', 'F', 'A']]);
@@ -23,7 +22,9 @@ const PARALLEL_FAMILIES = Object.freeze([['AB', 'CF', 'DE'], ['BC', 'AD', 'EF'],
 
 function el(name, attrs = {}, children = []) {
   const node = document.createElementNS(SVG_NS, name);
-  for (const [key, value] of Object.entries(attrs)) if (value !== undefined && value !== null) node.setAttribute(key, String(value));
+  for (const [key, value] of Object.entries(attrs)) {
+    if (value !== undefined && value !== null) node.setAttribute(key, String(value));
+  }
   for (const child of children) node.appendChild(child);
   return node;
 }
@@ -272,6 +273,103 @@ const RENDERERS = {
   V077_route_vs_straight_distance: renderCoordinateRoute,
   V078_native_distance_derivation: renderCoordinateRoute
 };
+
+Object.assign(RENDERERS, {
+  V086_hexagonal_number_count: renderCoordinatePressure,
+  V087_shell_route_distance_distinction: renderCoordinateRoute,
+  V089_exact_not_equal_angle: renderCoordinatePressure,
+  V090_four_field_search_modes: renderInspector,
+  V091_portable_relation_seed_catalogue: renderCascade,
+  V092_recurrence_to_cells_transition: renderSixFan,
+  V093_cells_enter_field: renderSixFan,
+  V094_unit_equilateral_area_cell: () => renderBasic('equilateral'),
+  V095_unit_cell_area_derivation: renderRightAngle,
+  V100_piece_accounting_area_proof: renderSixFan,
+  V101_area_to_transformation_transition: renderInspector,
+  V102_first_invariant_governed_change: renderInspector,
+  V103_transformation_grammar_overview: renderInspector,
+  V104_sixth_turn_rotation: renderSixFan,
+  V105_reflection_across_AD: renderParallelism,
+  V106_translation_across_field: renderCoordinatePressure,
+  V130_station_role_wheel: renderSameness,
+  V131_selection_activates_relation: renderCentreTriples,
+  V132_triangle_catalogue_as_identity_lens: renderBoundaryTriples,
+  V133_field_as_recurrence_place: renderCascade,
+  V135_invariant_as_lens: renderInspector,
+  V136_fixed_opening_engine: renderRadiiChords,
+  V137_practical_rule_fixed_opening: renderRadiiChords,
+  V139_radius_to_chord_portability: renderRadiiChords,
+  V143_four_roles_one_length: renderSameness,
+  V165_circle_as_diameter_carrier: renderDiameters,
+  V168_instance_vs_family_on_circle: renderRightAngle,
+  V169_circle_symmetry_display: renderSixFan,
+  V170_circle_as_local_origin: renderCoordinatePressure,
+  V171_circle_vs_field_distinction: renderCoordinatePressure,
+  V173_circle_reading_dependency_chain: renderCascade,
+  V174_same_curve_many_lenses: renderCascade,
+  V175_circle_to_station_roles_transition: renderSameness,
+  V176_station_label_vs_role: renderSameness,
+  V178_station_as_radius_endpoint: renderRadiiChords,
+  V181_neighbour_role_unit_chords_cells: renderSixFan,
+  V182_opposite_role_diameters: renderRightAngle,
+  V183_station_as_selection_participant: renderInspector,
+  V186_station_coordinate_memory_role: renderCoordinateRoute,
+  V188_station_role_catalogue: renderSameness,
+  V189_A_role_timeline: renderSameness,
+  V190_identity_survives_use: renderInspector,
+  V191_station_roles_to_selection_transition: renderInspector,
+  V193_available_vs_active_relation: renderInspector,
+  V194_pair_selection_role_switch: renderInspector,
+  V197_selected_triple_family_examples: renderBoundaryTriples,
+  V200_transformation_identity_survival: renderInspector,
+  V201_difference_then_invariant: renderInspector,
+  V202_field_selection_opportunities: renderCoordinatePressure,
+  V203_selection_not_proof_warning: renderInspector,
+  V204_select_inspect_classify_lock_reinspect: renderCascade,
+  V216_scaling_separates_identity_readings: renderInspector,
+  V217_same_requires_reading: renderInspector,
+  V218_identity_readings_on_residue: renderSameness,
+  V220_identity_recurrence_in_field: renderCoordinatePressure,
+  V221_instance_identity_definition_plate: renderCentreTriples,
+  V222_what_kind_of_same_transition: renderSameness,
+  V223_same_length_different_role_opening: renderRadiiChords,
+  V224_same_length_inspector: renderRadiiChords,
+  V226_same_direction_parallelism: renderParallelism,
+  V227_same_angle_pattern: renderRightAngle,
+  V233_resemblance_vs_invariant: renderInspector,
+  V275_identity_assembly_into_bodies: renderCascade,
+  V276_lawful_assembly_not_arbitrary_drawing: renderInspector,
+  V277_first_hexagon_as_assembled_body: renderSixFan,
+  V278_two_cell_rhombus_assembly: renderSixFan,
+  V279_boundary_vs_cell_reading: renderSixFan,
+  V280_body_sameness_invariants: renderInspector,
+  V281_lawful_cuts_decomposition: renderInspector,
+  V282_accountable_decomposition: renderSixFan,
+  V284_assembly_to_recomposition_chain: renderCascade,
+  V296_larger_triangle_decomposition_options: renderBoundaryTriples,
+  V297_decomposition_disciplined: renderInspector,
+  V298_lawful_vs_arbitrary_cutting: renderInspector,
+  V299_cut_availability_rule: renderInspector,
+  V301_cut_changes_reading_not_surface: renderSixFan,
+  V302_piece_account_checklist: renderCascade,
+  V303_diagram_vs_piece_accounting: renderInspector,
+  V304_cell_grammar_of_parts: renderSixFan,
+  V305_right_triangle_as_half_cell: renderRightAngle,
+  V306_distinct_routes_warning: renderInspector,
+  V323_recomposition_invariant_profile: renderInspector,
+  V324_field_supports_recomposition_sequence: renderCascade,
+  V325_recomposition_reveals_measure: renderSixFan,
+  V326_piece_account_proof_transfer: renderInspector,
+  V327_lawful_recomposition_definition: renderCascade,
+  V328_reinspection_lens_synthesis: renderCascade,
+  V329_part_two_reinspection_frame: renderCascade,
+  V343_enrichment_without_mythology: renderInspector,
+  V344_reinspection_method_loop: renderCascade,
+  V345_method_protects_from_drift: renderInspector,
+  V346_part_three_discipline_gate: renderCascade,
+  V347_part_two_teaching_chain: renderCascade,
+  V348_part_two_closing_aphorism: renderInspector
+});
 
 const ACTIVE_VISUAL_IDS = new Set(Object.keys(RENDERERS));
 
