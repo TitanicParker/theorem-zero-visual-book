@@ -1,25 +1,17 @@
 {
   "project": "Theorem Zero Visual Book",
-  "runtime_build": "2026-06-05-r6",
+  "runtime_build": "2026-06-05-r7",
   "pages_source": "main / root",
   "entrypoint": "index.html",
-  "reader_mode": "substrate-first landing lens with persistent bottom navigation",
+  "reader_mode": "canonical substrate HTML browser shell with persistent bottom navigation",
   "landing_screen": {
-    "default_view": "canonical substrate cycling through initial first-circle construction visuals",
-    "cycle_visual_ids": [
-      "V001_first_radius_sweep",
-      "V002_carried_opening_to_B",
-      "V003_forced_equilateral_OAB",
-      "V004_six_step_boundary_closure",
-      "V005_release_curve_seven_point_residue",
-      "V006_radii_chords_role_change",
-      "V007_six_equilateral_fan",
-      "V008_three_diameters_straight_angles",
-      "V009_primary_parallel_families"
-    ],
-    "persistent_navigation": "bottom back/forward controls"
+    "default_view": "canonical/theorem_zero_canonical_substrate_v1_0_final.html",
+    "implementation": "index.html loads the locked canonical substrate HTML in a full-window iframe",
+    "persistent_navigation": "bottom back/forward controls supplied by outer browser shell",
+    "canonical_html_modified": false
   },
   "substrate_contract_enforced": true,
+  "canonical_substrate_sha256_expected": "9c8085212c2672780aae5249481826e3e4d14b7cecf65e12e5d060df537e5837",
   "first_rendered_visual_ids": [
     "V001_first_radius_sweep",
     "V002_carried_opening_to_B",
