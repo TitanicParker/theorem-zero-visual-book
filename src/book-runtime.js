@@ -58,7 +58,18 @@ const VISUAL_ALIASES = {
   V201_difference_then_invariant: 'V036_invariance_not_appearance',
   V202_field_selection_opportunities: 'V023_native_coordinate_pressure',
   V203_selection_not_proof_warning: 'V034_join_attribute_inspector',
-  V204_select_inspect_classify_lock_reinspect: 'V025_relation_cascade_summary'
+  V204_select_inspect_classify_lock_reinspect: 'V025_relation_cascade_summary',
+  V216_scaling_separates_identity_readings: 'V036_invariance_not_appearance',
+  V217_same_requires_reading: 'V036_invariance_not_appearance',
+  V218_identity_readings_on_residue: 'V015_modes_of_sameness',
+  V220_identity_recurrence_in_field: 'V023_native_coordinate_pressure',
+  V221_instance_identity_definition_plate: 'V019_identity_vs_instance',
+  V222_what_kind_of_same_transition: 'V015_modes_of_sameness',
+  V223_same_length_different_role_opening: 'V006_radii_chords_role_change',
+  V224_same_length_inspector: 'V006_radii_chords_role_change',
+  V226_same_direction_parallelism: 'V014_direction_vs_line_parallelism',
+  V227_same_angle_pattern: 'V020_right_angle_root_three_lock',
+  V233_resemblance_vs_invariant: 'V036_invariance_not_appearance'
 };
 
 const RENDER_FAMILIES = [
@@ -233,6 +244,23 @@ const RENDER_FAMILIES = [
       'V202_field_selection_opportunities',
       'V203_selection_not_proof_warning',
       'V204_select_inspect_classify_lock_reinspect'
+    ]
+  },
+  {
+    tier: 'Family 13',
+    title: 'Identity and sameness placeholder family',
+    ids: [
+      'V216_scaling_separates_identity_readings',
+      'V217_same_requires_reading',
+      'V218_identity_readings_on_residue',
+      'V220_identity_recurrence_in_field',
+      'V221_instance_identity_definition_plate',
+      'V222_what_kind_of_same_transition',
+      'V223_same_length_different_role_opening',
+      'V224_same_length_inspector',
+      'V226_same_direction_parallelism',
+      'V227_same_angle_pattern',
+      'V233_resemblance_vs_invariant'
     ]
   }
 ];
