@@ -1,4 +1,4 @@
-import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r8';
+import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r9';
 
 const position = document.querySelector('#reader-position');
 const backButton = document.querySelector('#reader-back');
@@ -9,7 +9,16 @@ const familyLabel = document.querySelector('#family-label');
 
 const screens = [
   {
-    type: 'canonical',
+    type: 'frame',
+    key: 'arrow-centrality-navigator',
+    tier: 'Toy',
+    label: 'arrow centrality navigator',
+    title: 'Arrow / Centrality Navigator',
+    description: 'A browser-native toy where arrows move activation focus across the locked substrate field.',
+    src: 'canonical/theorem-zero-arrow-centrality-navigator.html'
+  },
+  {
+    type: 'frame',
     key: 'canonical-substrate',
     tier: 'Tier 0',
     label: 'canonical substrate',
@@ -154,7 +163,7 @@ const screens = [
   }
 ];
 
-let activeScreen = 0;
+let activeScreen = 1;
 
 function wrapIndex(index) {
   return ((index % screens.length) + screens.length) % screens.length;
@@ -192,7 +201,7 @@ function activateScreen(index) {
   const screen = screens[activeScreen];
   setLabel(screen, activeScreen);
 
-  if (screen.type === 'canonical') {
+  if (screen.type === 'frame') {
     frame.hidden = false;
     renderStage.hidden = true;
     renderStage.replaceChildren();
@@ -217,4 +226,4 @@ window.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowRight') step(1);
 });
 
-activateScreen(0);
+activateScreen(activeScreen);
