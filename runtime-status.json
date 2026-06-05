@@ -1,13 +1,15 @@
 {
   "project": "Theorem Zero Visual Book",
-  "runtime_build": "2026-06-05-r8",
+  "runtime_build": "2026-06-05-r9",
   "pages_source": "main / root",
   "entrypoint": "index.html",
-  "reader_mode": "canonical substrate Tier 0 plus arrow-accessible rendered visual families",
+  "reader_mode": "canonical substrate landing with left-arrow toy route and right-arrow rendered families",
   "landing_screen": {
     "default_view": "canonical/theorem_zero_canonical_substrate_v1_0_final.html",
-    "implementation": "index.html loads the locked canonical substrate HTML in a full-window iframe as Tier 0",
-    "persistent_navigation": "bottom back/forward controls cycle through Tier 0 and implemented render-family screens",
+    "left_arrow_view": "canonical/theorem-zero-arrow-centrality-navigator.html",
+    "right_arrow_view": "implemented render-family sequence beginning at V001_first_radius_sweep",
+    "implementation": "index.html loads browser-native HTML pages in a full-window iframe for Tier 0 and toy routes, and uses the render stage for implemented visual families",
+    "persistent_navigation": "bottom back/forward controls cycle through toy, Tier 0, and implemented render-family screens",
     "canonical_html_modified": false
   },
   "substrate_contract_enforced": true,
