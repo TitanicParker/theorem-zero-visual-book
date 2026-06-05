@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Theorem Zero Visual Book</title>
+  <link rel="stylesheet" href="src/book-runtime.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Theorem Zero</p>
+      <h1>Visual Book Runtime Preview</h1>
+      <p class="lede">A single-page reader wired to the normalized manuscript, mapped scene manifest, and Visual-ID-first asset registry.</p>
+    </div>
+    <nav class="top-actions" aria-label="Runtime actions">
+      <a href="data/scenes.json">Scenes JSON</a>
+      <a href="data/visual-assets.json">Visual Assets</a>
+      <a href="docs/scene-visual-mapping-report.md">Mapping Report</a>
+    </nav>
+  </header>
+  <main id="app" class="app-shell" aria-live="polite">
+    <section class="loading-card">
+      <h2>Loading source data...</h2>
+      <p>Fetching manuscript, mapped scenes, visual assets, mapping audit, and interstitial ledger.</p>
+    </section>
+  </main>
+  <template id="scene-template">
+    <article class="scene-card">
+      <div class="scene-main"></div>
+      <aside class="visual-panel"></aside>
+    </article>
+  </template>
+  <script type="module" src="src/book-runtime.js"></script>
+</body>
+</html>
