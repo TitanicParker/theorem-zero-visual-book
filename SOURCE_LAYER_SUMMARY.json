@@ -5,23 +5,54 @@
     "data/interstitials/earned-catalogue-first-movement.md",
     "data/manuscript.json",
     "data/manuscript.md",
-    "data/scenes.json"
+    "data/scenes.json",
+    "canonical/theorem_zero_canonical_substrate_v1_0_final.html"
   ],
   "counts": {
     "parts": 2,
     "chapters": 23,
-    "paragraph_like_blocks": 365,
-    "interstitials": 1
+    "source_blocks": 365,
+    "interstitials": 1,
+    "block_types": {
+      "aphorism": 3,
+      "equation_block": 7,
+      "paragraph": 340,
+      "transition": 15
+    },
+    "scenes": 366,
+    "scene_types": {
+      "aphorism": 3,
+      "equation_block": 7,
+      "ledger_table": 1,
+      "paragraph_visual": 340,
+      "transition": 15
+    },
+    "visual_bearing_true": 341,
+    "visual_bearing_false": 25,
+    "visual_id_null": 366
   },
   "last_part_one_chapter_ten_block": "P1-C10-010",
   "scene_count": 366,
   "interstitial_rows": 18,
+  "count_reconciliation_note": {
+    "source_blocks": "365 source blocks preserve paragraphs, equation blocks, aphorisms, and transitions in the manuscript source layer. The external interstitial ledger is preserved separately as its own ledger_table scene.",
+    "visual_register_rows": "348 visual rows belong to the visual asset catalogue paragraph-level mapping, not to the complete manuscript source-block inventory.",
+    "expected_mismatch": "These counts are not expected to match one-to-one until data/scenes.json is mapped to the visual asset registry.",
+    "bridge_rule": "The correct bridge is scene mapping, not flattening the manuscript."
+  },
+  "normalization": {
+    "manuscript_blocks_include_direct_part_chapter_metadata": true,
+    "scenes_include_visual_mapping_status": true,
+    "scenes_include_visual_bearing": true,
+    "canonical_gitkeep_removed_after_canonical_upload": true
+  },
   "sha256": {
-    "README.md": "1e3e6ce7723c2c76eb81812b173958093a779564785c50b7e603af163b14f873",
-    "data/interstitials/earned-catalogue-first-movement.json": "f66e3c6c4e0880001aa93d835e61ad804e3ad50582653d2df27aa1d7ca8c1c9b",
+    "README.md": "1ec9cf7971dc988633c760d309559197f5d295b2e6cd743f9915a3ed071964ff",
+    "data/interstitials/earned-catalogue-first-movement.json": "759081a5d819f0baab423a9ad4a947fa2580b1323ecee573815c27f662a7b16d",
     "data/interstitials/earned-catalogue-first-movement.md": "1c04226dd4084f0d62faf2a2fbd7483659d799365c04f7c074b0c6a530a925b3",
-    "data/manuscript.json": "de7bb54b556c7d931e64e51b632178c79e301b89c24f5ff39bd93acf509b8ad0",
+    "data/manuscript.json": "dc8b1e3f90a41d290c16da0e93570219f4a75ca54b2d2fc8073246a7af2a931c",
     "data/manuscript.md": "95333f9cc353e8eab11c5ffd0cca9e0e8787597627447e53728046eac32b850e",
-    "data/scenes.json": "ab5717353e6b3adafb515d808d5ca203b45a75cd3fdd921f9ce4c00e484d9452"
+    "data/scenes.json": "97fdda1834f1fec584feb16334a3655565e74546c0340ee8a59afa271435a6db",
+    "canonical/theorem_zero_canonical_substrate_v1_0_final.html": "9c8085212c2672780aae5249481826e3e4d14b7cecf65e12e5d060df537e5837"
   }
 }
