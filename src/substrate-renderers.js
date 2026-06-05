@@ -163,15 +163,7 @@ function baseSvg(title) {
     'aria-label': title
   });
   svg.appendChild(el('rect', { x: 12, y: 12, width: 336, height: 276, rx: 18, class: 'tz-frame' }));
-  svg.appendChild(text(22, 34, title, 'tz-title'));
-  svg.appendChild(text(22, 52, 'canonical orientation: A west, B north-west, C north-east', 'tz-subtitle'));
   return svg;
-}
-
-function appendCaption(svg, value) {
-  const caption = el('text', { x: 180, y: 278, class: 'tz-caption', 'text-anchor': 'middle' });
-  caption.textContent = value;
-  svg.appendChild(caption);
 }
 
 function withVerifiedSubstrate(title, render) {
@@ -234,8 +226,6 @@ function renderV001() {
     svg.appendChild(circle(points, 'tz-circle tz-animate-circle'));
     svg.appendChild(point(points, 'O', 'tz-point tz-origin'));
     svg.appendChild(point(points, 'A'));
-    svg.appendChild(text(100, 143, 'fixed opening', 'tz-callout'));
-    appendCaption(svg, 'O fixes the opening; A is the west unit station on the canonical substrate.');
     return svg;
   });
 }
@@ -249,8 +239,6 @@ function renderV002() {
     svg.appendChild(point(points, 'O', 'tz-point tz-origin'));
     svg.appendChild(point(points, 'A'));
     svg.appendChild(point(points, 'B', 'tz-point tz-active'));
-    svg.appendChild(text(86, 105, 'same opening carried', 'tz-callout'));
-    appendCaption(svg, 'The compass opening moves from west station A to north-west station B.');
     return svg;
   });
 }
@@ -266,8 +254,6 @@ function renderV003() {
     svg.appendChild(point(points, 'O', 'tz-point tz-origin'));
     svg.appendChild(point(points, 'A'));
     svg.appendChild(point(points, 'B', 'tz-point tz-active'));
-    svg.appendChild(text(104, 132, 'OA = OB = AB', 'tz-callout'));
-    appendCaption(svg, 'Three equal substrate unit relations force the equilateral triangle OAB.');
     return svg;
   });
 }
@@ -280,7 +266,6 @@ function renderV004() {
     appendBoundarySteps(svg, points, 'tz-step');
     svg.appendChild(el('path', { d: arcPath(points, names), class: 'tz-walk tz-animate-draw' }));
     appendAllStations(svg, points);
-    appendCaption(svg, 'The fixed opening steps A-B-C-D-E-F and closes on the canonical circle.');
     return svg;
   });
 }
@@ -291,8 +276,6 @@ function renderV005() {
     svg.appendChild(circle(points, 'tz-circle tz-fading'));
     appendRadii(svg, points, 'tz-ghost-line');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(112, 68, 'curve released', 'tz-callout'));
-    appendCaption(svg, 'When the curve is released, the lawful residue is O plus A-F.');
     return svg;
   });
 }
@@ -304,9 +287,6 @@ function renderV006() {
     appendRadii(svg, points, 'tz-radius tz-role-radius');
     appendBoundarySteps(svg, points, 'tz-step tz-role-chord');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(86, 108, 'radii: same opening from O', 'tz-callout'));
-    svg.appendChild(text(192, 102, 'chords: same length, new role', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'The same unit length appears as radius and as neighbouring chord; role changes, length does not.');
     return svg;
   });
 }
@@ -322,8 +302,6 @@ function renderV007() {
     appendRadii(svg, points, 'tz-proof tz-thin-proof');
     appendBoundarySteps(svg, points, 'tz-proof');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(116, 150, 'six forced cells', 'tz-callout'));
-    appendCaption(svg, 'Each neighbouring boundary pair with O forms one equilateral cell around the centre.');
     return svg;
   });
 }
@@ -334,9 +312,6 @@ function renderV008() {
     svg.appendChild(circle(points, 'tz-circle tz-muted'));
     appendDiameters(svg, points, 'tz-diameter tz-animate-draw');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(136, 142, 'AD · BE · CF', 'tz-callout'));
-    svg.appendChild(text(124, 160, 'three straight centre-lines', 'tz-callout'));
-    appendCaption(svg, 'Opposite boundary stations form three diameters through O and three straight angles.');
     return svg;
   });
 }
@@ -349,9 +324,6 @@ function renderV009() {
     svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b'));
     svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c'));
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 78, 'q/r/q+r carriers', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'native triangular grain', 'tz-callout'));
-    appendCaption(svg, 'The first circle discloses the three native carrier directions; no square grid is introduced.');
     return svg;
   });
 }
@@ -364,9 +336,6 @@ function renderV010() {
     appendBoundarySteps(svg, points, 'tz-step tz-role-chord');
     appendDiameters(svg, points, 'tz-diameter tz-soft');
     appendParallelFamilies(svg, points);
-    svg.appendChild(text(42, 78, 'inventory: O, A-F', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'radii · chords · cells · diameters · carriers', 'tz-callout'));
-    appendCaption(svg, 'The first circle has already earned centre, radii, chords, cells, diameters, and carrier families.');
     return svg;
   });
 }
@@ -378,9 +347,6 @@ function renderV011() {
     appendRadii(svg, points, 'tz-radius tz-role-radius');
     appendPairSet(svg, points, UNIT_CHORDS, 'tz-step tz-role-chord');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 82, '21 possible joins', 'tz-callout'));
-    svg.appendChild(text(42, 98, '6 radii + 6 unit chords', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'The pair catalogue begins by separating the twelve unit-length joins from all twenty-one joins.');
     return svg;
   });
 }
@@ -394,9 +360,6 @@ function renderV012() {
     appendPairSet(svg, points, NEXT_CHORDS, 'tz-next-class');
     appendDiameters(svg, points, 'tz-diameter');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 78, 'unit · next-neighbour · diameter', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'sqrt3 pending; diameter length two', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'The twenty-one joins sort into unit joins, next-neighbour chords, and diameters.');
     return svg;
   });
 }
@@ -407,9 +370,6 @@ function renderV013() {
     svg.appendChild(circle(points, 'tz-circle tz-muted'));
     appendCarrierCollapse(svg, points);
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 78, 'segment ≠ carrier', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'finite joins collapse onto straight carriers', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'AO, OD, and AD are different segments on one carrier; joins and carriers are distinct.');
     return svg;
   });
 }
@@ -423,9 +383,6 @@ function renderV014() {
     svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b tz-soft'));
     svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c tz-soft'));
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 78, 'same direction under offset', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'parallelism is preserved direction', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'A direction can be carried by several distinct lines; parallelism is direction preserved under offset.');
     return svg;
   });
 }
@@ -439,9 +396,6 @@ function renderV015() {
     appendPairSet(svg, points, ['AB', 'DE'], 'tz-carrier-segment tz-family-1');
     appendPairSet(svg, points, ['BC', 'EF'], 'tz-carrier-segment tz-family-2');
     appendAllStations(svg, points, canonicalPerimeterNames());
-    svg.appendChild(text(42, 78, 'same length · carrier · direction · role', 'tz-callout'));
-    svg.appendChild(text(42, 94, 'identity depends on inspected relation', 'tz-callout tz-callout-blue'));
-    appendCaption(svg, 'The same local system supports several different sameness readings.');
     return svg;
   });
 }
