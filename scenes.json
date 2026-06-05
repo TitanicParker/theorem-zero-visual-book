@@ -1,0 +1,2934 @@
+{
+  "title": "Theorem Zero Visual Book Scene Manifest",
+  "version": "scene-manifest-v1",
+  "scenes": [
+    {
+      "scene_id": "scene-P1-C01-001",
+      "source_block_id": "P1-C01-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-002",
+      "source_block_id": "P1-C01-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-003",
+      "source_block_id": "P1-C01-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-004",
+      "source_block_id": "P1-C01-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-005",
+      "source_block_id": "P1-C01-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-006",
+      "source_block_id": "P1-C01-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-007",
+      "source_block_id": "P1-C01-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-008",
+      "source_block_id": "P1-C01-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-009",
+      "source_block_id": "P1-C01-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-010",
+      "source_block_id": "P1-C01-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-011",
+      "source_block_id": "P1-C01-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-012",
+      "source_block_id": "P1-C01-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-013",
+      "source_block_id": "P1-C01-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-014",
+      "source_block_id": "P1-C01-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-015",
+      "source_block_id": "P1-C01-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-016",
+      "source_block_id": "P1-C01-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-017",
+      "source_block_id": "P1-C01-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-018",
+      "source_block_id": "P1-C01-018",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-019",
+      "source_block_id": "P1-C01-019",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-020",
+      "source_block_id": "P1-C01-020",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-021",
+      "source_block_id": "P1-C01-021",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-022",
+      "source_block_id": "P1-C01-022",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-023",
+      "source_block_id": "P1-C01-023",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-024",
+      "source_block_id": "P1-C01-024",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-025",
+      "source_block_id": "P1-C01-025",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-026",
+      "source_block_id": "P1-C01-026",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C01-027",
+      "source_block_id": "P1-C01-027",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-001",
+      "source_block_id": "P1-C02-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-002",
+      "source_block_id": "P1-C02-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-003",
+      "source_block_id": "P1-C02-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-004",
+      "source_block_id": "P1-C02-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-005",
+      "source_block_id": "P1-C02-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-006",
+      "source_block_id": "P1-C02-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-007",
+      "source_block_id": "P1-C02-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-008",
+      "source_block_id": "P1-C02-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-009",
+      "source_block_id": "P1-C02-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-010",
+      "source_block_id": "P1-C02-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-011",
+      "source_block_id": "P1-C02-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-012",
+      "source_block_id": "P1-C02-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C02-013",
+      "source_block_id": "P1-C02-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-001",
+      "source_block_id": "P1-C03-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-002",
+      "source_block_id": "P1-C03-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-003",
+      "source_block_id": "P1-C03-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-004",
+      "source_block_id": "P1-C03-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-005",
+      "source_block_id": "P1-C03-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-006",
+      "source_block_id": "P1-C03-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-007",
+      "source_block_id": "P1-C03-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-008",
+      "source_block_id": "P1-C03-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-009",
+      "source_block_id": "P1-C03-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-010",
+      "source_block_id": "P1-C03-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-011",
+      "source_block_id": "P1-C03-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-012",
+      "source_block_id": "P1-C03-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C03-013",
+      "source_block_id": "P1-C03-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-001",
+      "source_block_id": "P1-C04-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-002",
+      "source_block_id": "P1-C04-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-003",
+      "source_block_id": "P1-C04-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-004",
+      "source_block_id": "P1-C04-004",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-005",
+      "source_block_id": "P1-C04-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-006",
+      "source_block_id": "P1-C04-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-007",
+      "source_block_id": "P1-C04-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-008",
+      "source_block_id": "P1-C04-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-009",
+      "source_block_id": "P1-C04-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-010",
+      "source_block_id": "P1-C04-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-011",
+      "source_block_id": "P1-C04-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-012",
+      "source_block_id": "P1-C04-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C04-013",
+      "source_block_id": "P1-C04-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-001",
+      "source_block_id": "P1-C05-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-002",
+      "source_block_id": "P1-C05-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-003",
+      "source_block_id": "P1-C05-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-004",
+      "source_block_id": "P1-C05-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-005",
+      "source_block_id": "P1-C05-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-006",
+      "source_block_id": "P1-C05-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-007",
+      "source_block_id": "P1-C05-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-008",
+      "source_block_id": "P1-C05-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-009",
+      "source_block_id": "P1-C05-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C05-010",
+      "source_block_id": "P1-C05-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-001",
+      "source_block_id": "P1-C06-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-002",
+      "source_block_id": "P1-C06-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-003",
+      "source_block_id": "P1-C06-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-004",
+      "source_block_id": "P1-C06-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-005",
+      "source_block_id": "P1-C06-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-006",
+      "source_block_id": "P1-C06-006",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-007",
+      "source_block_id": "P1-C06-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-008",
+      "source_block_id": "P1-C06-008",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-009",
+      "source_block_id": "P1-C06-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-010",
+      "source_block_id": "P1-C06-010",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-011",
+      "source_block_id": "P1-C06-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-012",
+      "source_block_id": "P1-C06-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-013",
+      "source_block_id": "P1-C06-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-014",
+      "source_block_id": "P1-C06-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C06-015",
+      "source_block_id": "P1-C06-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-001",
+      "source_block_id": "P1-C07-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-002",
+      "source_block_id": "P1-C07-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-003",
+      "source_block_id": "P1-C07-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-004",
+      "source_block_id": "P1-C07-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-005",
+      "source_block_id": "P1-C07-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-006",
+      "source_block_id": "P1-C07-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-007",
+      "source_block_id": "P1-C07-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-008",
+      "source_block_id": "P1-C07-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-009",
+      "source_block_id": "P1-C07-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C07-010",
+      "source_block_id": "P1-C07-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-001",
+      "source_block_id": "P1-C08-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-002",
+      "source_block_id": "P1-C08-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-003",
+      "source_block_id": "P1-C08-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-004",
+      "source_block_id": "P1-C08-004",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-005",
+      "source_block_id": "P1-C08-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-006",
+      "source_block_id": "P1-C08-006",
+      "scene_type": "equation_block",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-007",
+      "source_block_id": "P1-C08-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-008",
+      "source_block_id": "P1-C08-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-009",
+      "source_block_id": "P1-C08-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-010",
+      "source_block_id": "P1-C08-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-011",
+      "source_block_id": "P1-C08-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-012",
+      "source_block_id": "P1-C08-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C08-013",
+      "source_block_id": "P1-C08-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-001",
+      "source_block_id": "P1-C09-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-002",
+      "source_block_id": "P1-C09-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-003",
+      "source_block_id": "P1-C09-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-004",
+      "source_block_id": "P1-C09-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-005",
+      "source_block_id": "P1-C09-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-006",
+      "source_block_id": "P1-C09-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-007",
+      "source_block_id": "P1-C09-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-008",
+      "source_block_id": "P1-C09-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-009",
+      "source_block_id": "P1-C09-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-010",
+      "source_block_id": "P1-C09-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C09-011",
+      "source_block_id": "P1-C09-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-001",
+      "source_block_id": "P1-C10-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-002",
+      "source_block_id": "P1-C10-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-003",
+      "source_block_id": "P1-C10-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-004",
+      "source_block_id": "P1-C10-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-005",
+      "source_block_id": "P1-C10-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-006",
+      "source_block_id": "P1-C10-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-007",
+      "source_block_id": "P1-C10-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-008",
+      "source_block_id": "P1-C10-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-009",
+      "source_block_id": "P1-C10-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P1-C10-010",
+      "source_block_id": "P1-C10-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-earned-catalogue-first-movement",
+      "source_block_id": "earned_catalogue_first_movement",
+      "scene_type": "ledger_table",
+      "visual_id": null,
+      "rendering_mode": "static_table_with_optional_row_focus",
+      "notes": "Interstitial ledger between Chapter Ten and Chapter Eleven."
+    },
+    {
+      "scene_id": "scene-P2-C11-001",
+      "source_block_id": "P2-C11-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-002",
+      "source_block_id": "P2-C11-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-003",
+      "source_block_id": "P2-C11-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-004",
+      "source_block_id": "P2-C11-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-005",
+      "source_block_id": "P2-C11-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-006",
+      "source_block_id": "P2-C11-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-007",
+      "source_block_id": "P2-C11-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-008",
+      "source_block_id": "P2-C11-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-009",
+      "source_block_id": "P2-C11-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-010",
+      "source_block_id": "P2-C11-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-011",
+      "source_block_id": "P2-C11-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-012",
+      "source_block_id": "P2-C11-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-013",
+      "source_block_id": "P2-C11-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C11-014",
+      "source_block_id": "P2-C11-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-001",
+      "source_block_id": "P2-C12-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-002",
+      "source_block_id": "P2-C12-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-003",
+      "source_block_id": "P2-C12-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-004",
+      "source_block_id": "P2-C12-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-005",
+      "source_block_id": "P2-C12-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-006",
+      "source_block_id": "P2-C12-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-007",
+      "source_block_id": "P2-C12-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-008",
+      "source_block_id": "P2-C12-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-009",
+      "source_block_id": "P2-C12-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-010",
+      "source_block_id": "P2-C12-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-011",
+      "source_block_id": "P2-C12-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-012",
+      "source_block_id": "P2-C12-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-013",
+      "source_block_id": "P2-C12-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-014",
+      "source_block_id": "P2-C12-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-015",
+      "source_block_id": "P2-C12-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-016",
+      "source_block_id": "P2-C12-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-017",
+      "source_block_id": "P2-C12-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-018",
+      "source_block_id": "P2-C12-018",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-019",
+      "source_block_id": "P2-C12-019",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C12-020",
+      "source_block_id": "P2-C12-020",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-001",
+      "source_block_id": "P2-C13-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-002",
+      "source_block_id": "P2-C13-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-003",
+      "source_block_id": "P2-C13-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-004",
+      "source_block_id": "P2-C13-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-005",
+      "source_block_id": "P2-C13-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-006",
+      "source_block_id": "P2-C13-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-007",
+      "source_block_id": "P2-C13-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-008",
+      "source_block_id": "P2-C13-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-009",
+      "source_block_id": "P2-C13-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-010",
+      "source_block_id": "P2-C13-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-011",
+      "source_block_id": "P2-C13-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-012",
+      "source_block_id": "P2-C13-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-013",
+      "source_block_id": "P2-C13-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-014",
+      "source_block_id": "P2-C13-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-015",
+      "source_block_id": "P2-C13-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-016",
+      "source_block_id": "P2-C13-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-017",
+      "source_block_id": "P2-C13-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-018",
+      "source_block_id": "P2-C13-018",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C13-019",
+      "source_block_id": "P2-C13-019",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-001",
+      "source_block_id": "P2-C14-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-002",
+      "source_block_id": "P2-C14-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-003",
+      "source_block_id": "P2-C14-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-004",
+      "source_block_id": "P2-C14-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-005",
+      "source_block_id": "P2-C14-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-006",
+      "source_block_id": "P2-C14-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-007",
+      "source_block_id": "P2-C14-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-008",
+      "source_block_id": "P2-C14-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-009",
+      "source_block_id": "P2-C14-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-010",
+      "source_block_id": "P2-C14-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-011",
+      "source_block_id": "P2-C14-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-012",
+      "source_block_id": "P2-C14-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-013",
+      "source_block_id": "P2-C14-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-014",
+      "source_block_id": "P2-C14-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-015",
+      "source_block_id": "P2-C14-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C14-016",
+      "source_block_id": "P2-C14-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-001",
+      "source_block_id": "P2-C15-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-002",
+      "source_block_id": "P2-C15-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-003",
+      "source_block_id": "P2-C15-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-004",
+      "source_block_id": "P2-C15-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-005",
+      "source_block_id": "P2-C15-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-006",
+      "source_block_id": "P2-C15-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-007",
+      "source_block_id": "P2-C15-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-008",
+      "source_block_id": "P2-C15-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-009",
+      "source_block_id": "P2-C15-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-010",
+      "source_block_id": "P2-C15-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-011",
+      "source_block_id": "P2-C15-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-012",
+      "source_block_id": "P2-C15-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-013",
+      "source_block_id": "P2-C15-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-014",
+      "source_block_id": "P2-C15-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-015",
+      "source_block_id": "P2-C15-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C15-016",
+      "source_block_id": "P2-C15-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-001",
+      "source_block_id": "P2-C16-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-002",
+      "source_block_id": "P2-C16-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-003",
+      "source_block_id": "P2-C16-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-004",
+      "source_block_id": "P2-C16-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-005",
+      "source_block_id": "P2-C16-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-006",
+      "source_block_id": "P2-C16-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-007",
+      "source_block_id": "P2-C16-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-008",
+      "source_block_id": "P2-C16-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-009",
+      "source_block_id": "P2-C16-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-010",
+      "source_block_id": "P2-C16-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-011",
+      "source_block_id": "P2-C16-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-012",
+      "source_block_id": "P2-C16-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-013",
+      "source_block_id": "P2-C16-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-014",
+      "source_block_id": "P2-C16-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C16-015",
+      "source_block_id": "P2-C16-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-001",
+      "source_block_id": "P2-C17-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-002",
+      "source_block_id": "P2-C17-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-003",
+      "source_block_id": "P2-C17-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-004",
+      "source_block_id": "P2-C17-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-005",
+      "source_block_id": "P2-C17-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-006",
+      "source_block_id": "P2-C17-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-007",
+      "source_block_id": "P2-C17-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-008",
+      "source_block_id": "P2-C17-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-009",
+      "source_block_id": "P2-C17-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-010",
+      "source_block_id": "P2-C17-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-011",
+      "source_block_id": "P2-C17-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-012",
+      "source_block_id": "P2-C17-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-013",
+      "source_block_id": "P2-C17-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-014",
+      "source_block_id": "P2-C17-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C17-015",
+      "source_block_id": "P2-C17-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-001",
+      "source_block_id": "P2-C18-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-002",
+      "source_block_id": "P2-C18-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-003",
+      "source_block_id": "P2-C18-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-004",
+      "source_block_id": "P2-C18-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-005",
+      "source_block_id": "P2-C18-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-006",
+      "source_block_id": "P2-C18-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-007",
+      "source_block_id": "P2-C18-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-008",
+      "source_block_id": "P2-C18-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-009",
+      "source_block_id": "P2-C18-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-010",
+      "source_block_id": "P2-C18-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-011",
+      "source_block_id": "P2-C18-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-012",
+      "source_block_id": "P2-C18-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-013",
+      "source_block_id": "P2-C18-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-014",
+      "source_block_id": "P2-C18-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C18-015",
+      "source_block_id": "P2-C18-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-001",
+      "source_block_id": "P2-C19-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-002",
+      "source_block_id": "P2-C19-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-003",
+      "source_block_id": "P2-C19-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-004",
+      "source_block_id": "P2-C19-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-005",
+      "source_block_id": "P2-C19-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-006",
+      "source_block_id": "P2-C19-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-007",
+      "source_block_id": "P2-C19-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-008",
+      "source_block_id": "P2-C19-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-009",
+      "source_block_id": "P2-C19-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-010",
+      "source_block_id": "P2-C19-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-011",
+      "source_block_id": "P2-C19-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-012",
+      "source_block_id": "P2-C19-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-013",
+      "source_block_id": "P2-C19-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-014",
+      "source_block_id": "P2-C19-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-015",
+      "source_block_id": "P2-C19-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-016",
+      "source_block_id": "P2-C19-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C19-017",
+      "source_block_id": "P2-C19-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-001",
+      "source_block_id": "P2-C20-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-002",
+      "source_block_id": "P2-C20-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-003",
+      "source_block_id": "P2-C20-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-004",
+      "source_block_id": "P2-C20-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-005",
+      "source_block_id": "P2-C20-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-006",
+      "source_block_id": "P2-C20-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-007",
+      "source_block_id": "P2-C20-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-008",
+      "source_block_id": "P2-C20-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-009",
+      "source_block_id": "P2-C20-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-010",
+      "source_block_id": "P2-C20-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-011",
+      "source_block_id": "P2-C20-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-012",
+      "source_block_id": "P2-C20-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-013",
+      "source_block_id": "P2-C20-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-014",
+      "source_block_id": "P2-C20-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-015",
+      "source_block_id": "P2-C20-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-016",
+      "source_block_id": "P2-C20-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C20-017",
+      "source_block_id": "P2-C20-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-001",
+      "source_block_id": "P2-C21-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-002",
+      "source_block_id": "P2-C21-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-003",
+      "source_block_id": "P2-C21-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-004",
+      "source_block_id": "P2-C21-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-005",
+      "source_block_id": "P2-C21-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-006",
+      "source_block_id": "P2-C21-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-007",
+      "source_block_id": "P2-C21-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-008",
+      "source_block_id": "P2-C21-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-009",
+      "source_block_id": "P2-C21-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-010",
+      "source_block_id": "P2-C21-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-011",
+      "source_block_id": "P2-C21-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-012",
+      "source_block_id": "P2-C21-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-013",
+      "source_block_id": "P2-C21-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-014",
+      "source_block_id": "P2-C21-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-015",
+      "source_block_id": "P2-C21-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-016",
+      "source_block_id": "P2-C21-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-017",
+      "source_block_id": "P2-C21-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-018",
+      "source_block_id": "P2-C21-018",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-019",
+      "source_block_id": "P2-C21-019",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-020",
+      "source_block_id": "P2-C21-020",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-021",
+      "source_block_id": "P2-C21-021",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-022",
+      "source_block_id": "P2-C21-022",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-023",
+      "source_block_id": "P2-C21-023",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-024",
+      "source_block_id": "P2-C21-024",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-025",
+      "source_block_id": "P2-C21-025",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-026",
+      "source_block_id": "P2-C21-026",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-027",
+      "source_block_id": "P2-C21-027",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-028",
+      "source_block_id": "P2-C21-028",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-029",
+      "source_block_id": "P2-C21-029",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-030",
+      "source_block_id": "P2-C21-030",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-031",
+      "source_block_id": "P2-C21-031",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C21-032",
+      "source_block_id": "P2-C21-032",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-001",
+      "source_block_id": "P2-C22-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-002",
+      "source_block_id": "P2-C22-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-003",
+      "source_block_id": "P2-C22-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-004",
+      "source_block_id": "P2-C22-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-005",
+      "source_block_id": "P2-C22-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-006",
+      "source_block_id": "P2-C22-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-007",
+      "source_block_id": "P2-C22-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-008",
+      "source_block_id": "P2-C22-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-009",
+      "source_block_id": "P2-C22-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-010",
+      "source_block_id": "P2-C22-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-011",
+      "source_block_id": "P2-C22-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-012",
+      "source_block_id": "P2-C22-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-013",
+      "source_block_id": "P2-C22-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C22-014",
+      "source_block_id": "P2-C22-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-001",
+      "source_block_id": "P2-C23-001",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-002",
+      "source_block_id": "P2-C23-002",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-003",
+      "source_block_id": "P2-C23-003",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-004",
+      "source_block_id": "P2-C23-004",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-005",
+      "source_block_id": "P2-C23-005",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-006",
+      "source_block_id": "P2-C23-006",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-007",
+      "source_block_id": "P2-C23-007",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-008",
+      "source_block_id": "P2-C23-008",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-009",
+      "source_block_id": "P2-C23-009",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-010",
+      "source_block_id": "P2-C23-010",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-011",
+      "source_block_id": "P2-C23-011",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-012",
+      "source_block_id": "P2-C23-012",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-013",
+      "source_block_id": "P2-C23-013",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-014",
+      "source_block_id": "P2-C23-014",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-015",
+      "source_block_id": "P2-C23-015",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-016",
+      "source_block_id": "P2-C23-016",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-017",
+      "source_block_id": "P2-C23-017",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-018",
+      "source_block_id": "P2-C23-018",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-019",
+      "source_block_id": "P2-C23-019",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    },
+    {
+      "scene_id": "scene-P2-C23-020",
+      "source_block_id": "P2-C23-020",
+      "scene_type": "paragraph_visual",
+      "visual_id": null,
+      "rendering_mode": "pending",
+      "notes": "Visual ID to be assigned from the complete visual asset registry."
+    }
+  ]
+}
