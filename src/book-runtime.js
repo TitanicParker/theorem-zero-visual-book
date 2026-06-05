@@ -1,4 +1,4 @@
-import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r3';
+import { hasSubstrateRenderer, renderSubstrateVisual } from './substrate-renderers.js?v=20260605-r4';
 
 const DATA_PATHS = {
   manuscript: 'data/manuscript.json',
