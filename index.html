@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="runtime-build" content="theorem-zero-runtime-preview-2026-06-05-r2" />
   <title>Theorem Zero Visual Book</title>
-  <link rel="stylesheet" href="src/book-runtime.css" />
+  <link rel="stylesheet" href="src/book-runtime.css?v=20260605-r2" />
 </head>
 <body>
   <header class="app-header">
@@ -12,10 +13,12 @@
       <p class="eyebrow">Theorem Zero</p>
       <h1>Visual Book Runtime Preview</h1>
       <p class="lede">A single-page reader wired to the normalized manuscript, mapped scene manifest, and Visual-ID-first asset registry.</p>
+      <p class="build-marker">Runtime build: 2026-06-05-r2 / GitHub Pages root deployment</p>
     </div>
     <nav class="top-actions" aria-label="Runtime actions">
       <a href="data/scenes.json">Scenes JSON</a>
       <a href="data/visual-assets.json">Visual Assets</a>
+      <a href="data/scene-visual-mapping.json">Mapping Audit</a>
       <a href="docs/scene-visual-mapping-report.md">Mapping Report</a>
     </nav>
   </header>
@@ -31,6 +34,6 @@
       <aside class="visual-panel"></aside>
     </article>
   </template>
-  <script type="module" src="src/book-runtime.js"></script>
+  <script type="module" src="src/book-runtime.js?v=20260605-r2"></script>
 </body>
 </html>
