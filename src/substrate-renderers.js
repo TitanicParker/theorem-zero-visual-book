@@ -11,12 +11,16 @@ const ORIGIN = Object.freeze({ x: 180, y: 150 });
 const R = 90;
 const VIEW_BOX = '0 0 360 300';
 
-const FIRST_FIVE = new Set([
+const ACTIVE_VISUAL_IDS = new Set([
   'V001_first_radius_sweep',
   'V002_carried_opening_to_B',
   'V003_forced_equilateral_OAB',
   'V004_six_step_boundary_closure',
-  'V005_release_curve_seven_point_residue'
+  'V005_release_curve_seven_point_residue',
+  'V006_radii_chords_role_change',
+  'V007_six_equilateral_fan',
+  'V008_three_diameters_straight_angles',
+  'V009_primary_parallel_families'
 ]);
 
 function el(name, attrs = {}, children = []) {
@@ -63,8 +67,35 @@ function perimeterNamesClosed() {
   return [...names, names[0]];
 }
 
+function allStationNames() {
+  return ['O', ...canonicalPerimeterNames()];
+}
+
 function line(a, b, className = 'tz-line') {
   return el('line', { x1: a.x, y1: a.y, x2: b.x, y2: b.y, class: className });
+}
+
+function extendedLine(a, b, className = 'tz-carrier') {
+  const dx = b.x - a.x;
+  const dy = b.y - a.y;
+  const length = Math.hypot(dx, dy) || 1;
+  const reach = 260;
+  const ux = dx / length;
+  const uy = dy / length;
+  return el('line', {
+    x1: ORIGIN.x - ux * reach,
+    y1: ORIGIN.y - uy * reach,
+    x2: ORIGIN.x + ux * reach,
+    y2: ORIGIN.y + uy * reach,
+    class: className
+  });
+}
+
+function polygon(points, names, className = 'tz-fill') {
+  return el('polygon', {
+    points: names.map((name) => `${points[name].x},${points[name].y}`).join(' '),
+    class: className
+  });
 }
 
 function point(points, name, className = 'tz-point') {
@@ -117,6 +148,29 @@ function withVerifiedSubstrate(title, render) {
   return render(points);
 }
 
+function appendAllStations(svg, points, activeNames = []) {
+  const active = new Set(activeNames);
+  allStationNames().forEach((name) => {
+    const className = name === 'O'
+      ? 'tz-point tz-origin'
+      : active.has(name)
+        ? 'tz-point tz-active'
+        : 'tz-point';
+    svg.appendChild(point(points, name, className));
+  });
+}
+
+function appendBoundarySteps(svg, points, className = 'tz-step') {
+  const names = perimeterNamesClosed();
+  for (let i = 0; i < names.length - 1; i += 1) {
+    svg.appendChild(line(points[names[i]], points[names[i + 1]], className));
+  }
+}
+
+function appendRadii(svg, points, className = 'tz-radius') {
+  canonicalPerimeterNames().forEach((name) => svg.appendChild(line(points.O, points[name], className)));
+}
+
 function renderV001() {
   return withVerifiedSubstrate('V001 first radius sweep', (points) => {
     const svg = baseSvg('V001 first radius sweep');
@@ -149,7 +203,7 @@ function renderV003() {
   return withVerifiedSubstrate('V003 forced equilateral OAB', (points) => {
     const svg = baseSvg('V003 forced equilateral OAB');
     svg.appendChild(circle(points, 'tz-circle tz-muted'));
-    svg.appendChild(el('polygon', { points: `${points.O.x},${points.O.y} ${points.A.x},${points.A.y} ${points.B.x},${points.B.y}`, class: 'tz-fill' }));
+    svg.appendChild(polygon(points, ['O', 'A', 'B'], 'tz-fill'));
     svg.appendChild(line(points.O, points.A, 'tz-proof'));
     svg.appendChild(line(points.O, points.B, 'tz-proof'));
     svg.appendChild(line(points.A, points.B, 'tz-proof'));
@@ -167,11 +221,9 @@ function renderV004() {
     const svg = baseSvg('V004 six-step boundary closure');
     svg.appendChild(circle(points, 'tz-circle'));
     const names = perimeterNamesClosed();
-    for (let i = 0; i < names.length - 1; i += 1) {
-      svg.appendChild(line(points[names[i]], points[names[i + 1]], 'tz-step'));
-    }
+    appendBoundarySteps(svg, points, 'tz-step');
     svg.appendChild(el('path', { d: arcPath(points, names), class: 'tz-walk tz-animate-draw' }));
-    ['O', ...canonicalPerimeterNames()].forEach((name) => svg.appendChild(point(points, name, name === 'O' ? 'tz-point tz-origin' : 'tz-point')));
+    appendAllStations(svg, points);
     appendCaption(svg, 'The fixed opening steps A-B-C-D-E-F and closes on the canonical circle.');
     return svg;
   });
@@ -181,10 +233,71 @@ function renderV005() {
   return withVerifiedSubstrate('V005 seven-point residue', (points) => {
     const svg = baseSvg('V005 seven-point residue');
     svg.appendChild(circle(points, 'tz-circle tz-fading'));
-    canonicalPerimeterNames().forEach((name) => svg.appendChild(line(points.O, points[name], 'tz-ghost-line')));
-    ['O', ...canonicalPerimeterNames()].forEach((name) => svg.appendChild(point(points, name, name === 'O' ? 'tz-point tz-origin' : 'tz-point tz-active')));
+    appendRadii(svg, points, 'tz-ghost-line');
+    appendAllStations(svg, points, canonicalPerimeterNames());
     svg.appendChild(text(112, 68, 'curve released', 'tz-callout'));
     appendCaption(svg, 'When the curve is released, the lawful residue is O plus A-F.');
+    return svg;
+  });
+}
+
+function renderV006() {
+  return withVerifiedSubstrate('V006 radii/chords role change', (points) => {
+    const svg = baseSvg('V006 radii and chords');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    appendRadii(svg, points, 'tz-radius tz-role-radius');
+    appendBoundarySteps(svg, points, 'tz-step tz-role-chord');
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(86, 108, 'radii: same opening from O', 'tz-callout'));
+    svg.appendChild(text(192, 102, 'chords: same length, new role', 'tz-callout tz-callout-blue'));
+    appendCaption(svg, 'The same unit length appears as radius and as neighbouring chord; role changes, length does not.');
+    return svg;
+  });
+}
+
+function renderV007() {
+  return withVerifiedSubstrate('V007 six equilateral fan', (points) => {
+    const svg = baseSvg('V007 six equilateral fan');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    const names = perimeterNamesClosed();
+    for (let i = 0; i < names.length - 1; i += 1) {
+      svg.appendChild(polygon(points, ['O', names[i], names[i + 1]], i % 2 === 0 ? 'tz-fill tz-cell-fill-a' : 'tz-fill tz-cell-fill-b'));
+    }
+    appendRadii(svg, points, 'tz-proof tz-thin-proof');
+    appendBoundarySteps(svg, points, 'tz-proof');
+    appendAllStations(svg, points, canonicalPerimeterNames());
+    svg.appendChild(text(116, 150, 'six forced cells', 'tz-callout'));
+    appendCaption(svg, 'Each neighbouring boundary pair with O forms one equilateral cell around the centre.');
+    return svg;
+  });
+}
+
+function renderV008() {
+  return withVerifiedSubstrate('V008 three diameters', (points) => {
+    const svg = baseSvg('V008 three diameters');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    svg.appendChild(line(points.A, points.D, 'tz-diameter tz-animate-draw'));
+    svg.appendChild(line(points.B, points.E, 'tz-diameter tz-animate-draw'));
+    svg.appendChild(line(points.C, points.F, 'tz-diameter tz-animate-draw'));
+    appendAllStations(svg, points, ['A', 'B', 'C', 'D', 'E', 'F']);
+    svg.appendChild(text(136, 142, 'AD · BE · CF', 'tz-callout'));
+    svg.appendChild(text(124, 160, 'three straight centre-lines', 'tz-callout'));
+    appendCaption(svg, 'Opposite boundary stations form three diameters through O and three straight angles.');
+    return svg;
+  });
+}
+
+function renderV009() {
+  return withVerifiedSubstrate('V009 primary carrier families', (points) => {
+    const svg = baseSvg('V009 primary carrier families');
+    svg.appendChild(circle(points, 'tz-circle tz-muted'));
+    svg.appendChild(extendedLine(points.A, points.D, 'tz-carrier tz-carrier-a'));
+    svg.appendChild(extendedLine(points.B, points.E, 'tz-carrier tz-carrier-b'));
+    svg.appendChild(extendedLine(points.C, points.F, 'tz-carrier tz-carrier-c'));
+    appendAllStations(svg, points, ['A', 'B', 'C', 'D', 'E', 'F']);
+    svg.appendChild(text(42, 78, 'q/r/q+r carriers', 'tz-callout'));
+    svg.appendChild(text(42, 94, 'native triangular grain', 'tz-callout'));
+    appendCaption(svg, 'The first circle discloses the three native carrier directions; no square grid is introduced.');
     return svg;
   });
 }
@@ -194,11 +307,15 @@ const RENDERERS = {
   V002_carried_opening_to_B: renderV002,
   V003_forced_equilateral_OAB: renderV003,
   V004_six_step_boundary_closure: renderV004,
-  V005_release_curve_seven_point_residue: renderV005
+  V005_release_curve_seven_point_residue: renderV005,
+  V006_radii_chords_role_change: renderV006,
+  V007_six_equilateral_fan: renderV007,
+  V008_three_diameters_straight_angles: renderV008,
+  V009_primary_parallel_families: renderV009
 };
 
 export function hasSubstrateRenderer(visualId) {
-  return FIRST_FIVE.has(visualId);
+  return ACTIVE_VISUAL_IDS.has(visualId);
 }
 
 export function renderSubstrateVisual(visualId) {
