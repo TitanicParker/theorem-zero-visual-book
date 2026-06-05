@@ -6,6 +6,9 @@
   --line: rgba(160, 245, 222, 0.2);
   --panel: rgba(5, 8, 13, 0.76);
   --accent: rgba(160, 245, 222, 0.92);
+  --accent-warm: rgba(255, 211, 110, 0.92);
+  --accent-blue: rgba(143, 185, 255, 0.92);
+  --ok: rgba(100, 255, 210, 0.92);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -75,6 +78,11 @@ button { font: inherit; }
   outline: none;
 }
 
+.reader-step-controls button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
 .reader-position {
   min-width: 10.5rem;
   text-align: center;
@@ -82,6 +90,60 @@ button { font: inherit; }
   font-size: 0.82rem;
   letter-spacing: 0.03em;
 }
+
+.substrate-stage {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.substrate-svg { display: block; width: 100%; height: auto; min-height: 14rem; }
+.tz-frame { fill: transparent; stroke: transparent; }
+.tz-title, .tz-label, .tz-caption, .tz-callout { fill: var(--ink); font-family: ui-sans-serif, system-ui, sans-serif; }
+.tz-title { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; fill: var(--accent-warm); }
+.tz-label { font-size: 13px; font-weight: 700; }
+.tz-caption { font-size: 11px; fill: var(--muted); }
+.tz-callout { font-size: 11px; fill: var(--accent-warm); }
+.tz-callout-blue { fill: var(--accent-blue); }
+.tz-subtitle { font-size: 10px; fill: var(--muted); }
+.tz-circle { fill: none; stroke: rgba(143, 185, 255, 0.88); stroke-width: 2; }
+.tz-muted { stroke-opacity: 0.42; }
+.tz-soft { opacity: 0.42; }
+.tz-fading { stroke-dasharray: 4 7; opacity: 0.48; }
+.tz-line, .tz-radius, .tz-step, .tz-proof, .tz-walk, .tz-ghost-line, .tz-diameter, .tz-carrier, .tz-carrier-segment, .tz-nested-segment, .tz-unit-class, .tz-next-class { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.tz-radius { stroke: var(--accent-warm); stroke-width: 3; }
+.tz-step { stroke: var(--accent-blue); stroke-width: 3; }
+.tz-proof { stroke: var(--ok); stroke-width: 3; }
+.tz-thin-proof { stroke-width: 1.5; opacity: 0.78; }
+.tz-role-radius { opacity: 0.88; }
+.tz-role-chord { opacity: 0.78; stroke-dasharray: 7 5; }
+.tz-diameter { stroke: var(--accent-warm); stroke-width: 4; opacity: 0.88; }
+.tz-carrier { stroke-width: 2.5; stroke-dasharray: 12 8; opacity: 0.72; }
+.tz-carrier-a { stroke: var(--accent-warm); }
+.tz-carrier-b { stroke: var(--accent-blue); }
+.tz-carrier-c { stroke: var(--ok); }
+.tz-carrier-segment { stroke-width: 3.2; opacity: 0.84; }
+.tz-nested-segment { stroke-width: 5; opacity: 0.54; }
+.tz-family-1 { stroke: var(--accent-warm); }
+.tz-family-2 { stroke: var(--accent-blue); }
+.tz-family-3 { stroke: var(--ok); }
+.tz-unit-class { stroke: var(--ok); stroke-width: 2.5; }
+.tz-next-class { stroke: var(--accent-blue); stroke-width: 3; stroke-dasharray: 5 5; }
+.tz-walk { stroke: var(--accent-warm); stroke-width: 5; stroke-dasharray: 10 7; opacity: 0.82; }
+.tz-ghost-line { stroke: rgba(235, 250, 246, 0.2); stroke-width: 1.5; }
+.tz-fill { fill: rgba(100, 255, 210, 0.12); stroke: none; }
+.tz-cell-fill-a { fill: rgba(100, 255, 210, 0.14); }
+.tz-cell-fill-b { fill: rgba(143, 185, 255, 0.12); }
+.tz-point { fill: var(--ink); stroke: var(--bg); stroke-width: 2; }
+.tz-origin { fill: var(--accent-warm); }
+.tz-active { fill: var(--ok); }
+.tz-animate-draw { stroke-dasharray: 400; stroke-dashoffset: 400; animation: drawLine 1.4s ease-out forwards; }
+.tz-animate-circle { stroke-dasharray: 565; stroke-dashoffset: 565; animation: drawLine 1.8s ease-out forwards; }
+
+@keyframes drawLine { to { stroke-dashoffset: 0; } }
 
 @media (max-width: 520px) {
   .reader-step-controls { gap: 0.45rem; }
