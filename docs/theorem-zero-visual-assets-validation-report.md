@@ -4,7 +4,7 @@ Generated from `theorem-zero-complete-visual-asset-catalogue.md`.
 
 ## Result
 
-PASS: `theorem-zero-complete-visual-assets.json` is valid JSON and matches the complete catalogue counts available in the forward manifest.
+PASS: `data/visual-assets.json` is valid JSON and matches the complete catalogue counts available in the forward manifest.
 
 ## Checks
 
