@@ -174,7 +174,7 @@ button { font: inherit; }
 .tz-muted { stroke-opacity: 0.42; }
 .tz-soft { opacity: 0.42; }
 .tz-fading { stroke-dasharray: 4 7; opacity: 0.48; }
-.tz-line, .tz-radius, .tz-step, .tz-proof, .tz-walk, .tz-ghost-line, .tz-diameter, .tz-carrier, .tz-carrier-segment, .tz-nested-segment, .tz-unit-class, .tz-next-class { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.tz-line, .tz-radius, .tz-step, .tz-proof, .tz-walk, .tz-ghost-line, .tz-diameter, .tz-carrier, .tz-carrier-segment, .tz-nested-segment, .tz-unit-class, .tz-next-class, .tz-angle-marker, .tz-inspector-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .tz-radius { stroke: var(--accent-warm); stroke-width: 3; }
 .tz-step { stroke: var(--accent-blue); stroke-width: 3; }
 .tz-proof { stroke: var(--ok); stroke-width: 3; }
@@ -193,6 +193,8 @@ button { font: inherit; }
 .tz-family-3 { stroke: var(--ok); }
 .tz-unit-class { stroke: var(--ok); stroke-width: 2.5; }
 .tz-next-class { stroke: var(--accent-blue); stroke-width: 3; stroke-dasharray: 5 5; }
+.tz-angle-marker { stroke: var(--accent-warm); stroke-width: 2.4; opacity: 0.92; }
+.tz-inspector-line { stroke: var(--accent); stroke-width: 3.5; opacity: 0.74; }
 .tz-walk { stroke: var(--accent-warm); stroke-width: 5; stroke-dasharray: 10 7; opacity: 0.82; }
 .tz-ghost-line { stroke: rgba(235, 250, 246, 0.2); stroke-width: 1.5; }
 .tz-fill { fill: rgba(100, 255, 210, 0.12); stroke: none; }
