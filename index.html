@@ -3,37 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="runtime-build" content="theorem-zero-runtime-preview-2026-06-05-r5" />
+  <meta name="runtime-build" content="theorem-zero-runtime-preview-2026-06-05-r6" />
   <title>Theorem Zero Visual Book</title>
-  <link rel="stylesheet" href="src/book-runtime.css?v=20260605-r5" />
+  <link rel="stylesheet" href="src/book-runtime.css?v=20260605-r6" />
 </head>
 <body>
-  <header class="app-header">
-    <div>
-      <p class="eyebrow">Theorem Zero</p>
-      <h1>Visual Book Runtime Preview</h1>
-      <p class="lede">A single-page reader wired to the normalized manuscript, mapped scene manifest, and Visual-ID-first asset registry.</p>
-      <p class="build-marker">Runtime build: 2026-06-05-r5 / first-circle family V001-V009 active / substrate contract enforced</p>
-    </div>
-    <nav class="top-actions" aria-label="Runtime actions">
-      <a href="data/scenes.json">Scenes JSON</a>
-      <a href="data/visual-assets.json">Visual Assets</a>
-      <a href="data/scene-visual-mapping.json">Mapping Audit</a>
-      <a href="docs/scene-visual-mapping-report.md">Mapping Report</a>
-    </nav>
-  </header>
-  <main id="app" class="app-shell" aria-live="polite">
-    <section class="loading-card">
-      <h2>Loading source data...</h2>
-      <p>Fetching manuscript, mapped scenes, visual assets, mapping audit, and interstitial ledger.</p>
+  <main id="book-reader" class="reader-shell" aria-live="polite">
+    <section class="lens-stage" aria-label="Theorem Zero canonical substrate landing view">
+      <div class="reader-brand">
+        <p class="eyebrow">Theorem Zero</p>
+        <h1>Canonical Substrate</h1>
+        <p class="build-marker">Runtime build: 2026-06-05-r6 / substrate landing lens / first-circle family active</p>
+      </div>
+
+      <div class="substrate-lens-wrap">
+        <div id="substrate-viewport" class="substrate-viewport" aria-label="Circular canonical substrate viewport"></div>
+      </div>
+
+      <aside id="scene-text-panel" class="scene-text-panel" aria-label="Current scene text">
+        <p class="scene-kicker">Loading</p>
+        <h2>Preparing substrate</h2>
+        <p>Fetching the manuscript, mapped scenes, visual assets, and canonical renderer registry.</p>
+      </aside>
     </section>
   </main>
-  <template id="scene-template">
-    <article class="scene-card">
-      <div class="scene-main"></div>
-      <aside class="visual-panel"></aside>
-    </article>
-  </template>
-  <script type="module" src="src/book-runtime.js?v=20260605-r5"></script>
+
+  <nav class="reader-step-controls" aria-label="Screen navigation">
+    <button id="reader-back" type="button" aria-label="Back one screen">←</button>
+    <span id="reader-position" class="reader-position">substrate</span>
+    <button id="reader-forward" type="button" aria-label="Forward one screen">→</button>
+  </nav>
+
+  <script type="module" src="src/book-runtime.js?v=20260605-r6"></script>
 </body>
 </html>
